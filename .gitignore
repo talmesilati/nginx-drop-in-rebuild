@@ -1,0 +1,19 @@
+# Build output. Regenerate with `make`; never review a binary in a diff.
+dist/
+
+# `make vex` intermediates: two full Trivy reports that differ from
+# scan/hardened-trivy.txt by the lines the VEX document suppresses. The
+# interesting part is the table `make vex` prints, not these.
+scan/vex-with.txt
+scan/vex-without.txt
+
+# 380 KB of generated filler for the gzip scenarios; compat_test.py writes it if
+# it is missing.
+test/fixtures/html/big.txt
+__pycache__/
+
+# scan/hardened-*.txt, scan/fixed-cves.txt and baseline-*.txt ARE tracked on
+# purpose -- every count in the README is derived from them, so a reviewer can
+# check the numbers without a working Docker daemon.
+
+.DS_Store

@@ -1,0 +1,61 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "https://github.com/talmesilati/nginx-drop-in-rebuild/vex/nginx-hardened-1.25.5-echo1",
+  "author": "Tal Mesilati <talmayam@gmail.com>",
+  "role": "vendor",
+  "timestamp": "2026-08-14T00:00:00Z",
+  "version": 2,
+  "statements": [
+    {
+      "vulnerability": {
+        "name": "CVE-2024-7347",
+        "description": "ngx_http_mp4_module buffer overread via a specially crafted mp4 file"
+      },
+      "products": [
+        {
+          "@id": "pkg:deb/debian/nginx@1.25.5-1%2Becho1~bookworm?arch=arm64&distro=debian-12.15"
+        },
+        {
+          "@id": "pkg:deb/debian/nginx@1.25.5-1%2Becho1~bookworm"
+        }
+      ],
+      "status": "fixed",
+      "action_statement": "Upstream fix from nginx 1.27.1 / 1.26.2 was backported onto the 1.25.5 source tree before compilation. See build/patches/CVE-2024-7347.patch. The upstream version string is deliberately unchanged at 1.25.5, so version-range matching cannot observe the fix; verify instead with: docker run --rm --entrypoint sh nginx-hardened:1.25.5 -c \"grep -c 'unordered mp4 stsc chunks' /usr/sbin/nginx\"",
+      "impact_statement": "The vulnerable arithmetic in ngx_http_mp4_crop_stsc_data is no longer reachable: the chunk-ordering check rejects malformed stsc atoms and the multiplication is widened to 64-bit."
+    },
+    {
+      "vulnerability": {
+        "name": "CVE-2026-42767",
+        "description": "NULL pointer dereference in CRMF EncryptedValue decryption, reachable by an application acting as a CMP client"
+      },
+      "products": [
+        {
+          "@id": "pkg:deb/debian/nginx-openssl@3.0.21-1%2Becho1~bookworm?arch=arm64&distro=debian-12.15"
+        },
+        {
+          "@id": "pkg:deb/debian/nginx-openssl@3.0.21-1%2Becho1~bookworm"
+        }
+      ],
+      "status": "not_affected",
+      "justification": "vulnerable_code_not_present",
+      "impact_statement": "This OpenSSL is configured with no-cmp, which drops crypto/cmp and crypto/crmf from the build; the CRMF EncryptedValue decryption path the advisory describes is not compiled into the shipped libcrypto.so.3. This is a statement about the artifact, not an argument about reachability, and it is checkable: docker run --rm --entrypoint sh nginx-hardened:1.25.5 -c \"grep -ac 'OSSL_CMP\\|OSSL_CRMF' /usr/lib/nginx/openssl/lib/libcrypto.so.3\" returns 0. build/build.sh asserts the same thing at build time, so the claim cannot quietly become false in a later rebuild. Still reported by scanners because 3.0.21 falls inside the advisory's version range and Debian marks this won't-fix -- which is exactly the gap this document exists to close."
+    },
+    {
+      "vulnerability": {
+        "name": "CVE-2025-27587",
+        "description": "Minerva timing side-channel recovering P-384 ECDSA nonces, in OpenSSL's PowerPC-specific code"
+      },
+      "products": [
+        {
+          "@id": "pkg:deb/debian/nginx-openssl@3.0.21-1%2Becho1~bookworm?arch=arm64&distro=debian-12.15"
+        },
+        {
+          "@id": "pkg:deb/debian/nginx-openssl@3.0.21-1%2Becho1~bookworm"
+        }
+      ],
+      "status": "not_affected",
+      "justification": "vulnerable_code_not_present",
+      "impact_statement": "The advisory is scoped to the PowerPC architecture. This package is built for arm64 (and amd64 on an amd64 host); the ppc64 elliptic-curve implementation the timing leak lives in is selected by OpenSSL's Configure per target and is not compiled here. Checkable against the package's own metadata: docker run --rm --entrypoint dpkg-query nginx-hardened:1.25.5 -W -f='${Architecture}\\n' nginx-openssl. Note that unlike CVE-2026-42767 we did not change the build for this one -- there was nothing to remove, because the affected code was never in a non-PowerPC build. Upstream OpenSSL has not shipped a fix in the 3.0 branch, so a version bump cannot clear it either."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# The service account and runtime directories belong to the package, not to the
+# Dockerfile -- otherwise the .deb only works in an image we built.
+#
+set -e
+
+case "$1" in
+    configure)
+        # uid/gid 101 matches nginx:1.25-bookworm so bind-mounted content and
+        # host-side file ownership behave identically.
+        if ! getent group nginx >/dev/null; then
+            groupadd --system --gid 101 nginx
+        fi
+        if ! getent passwd nginx >/dev/null; then
+            useradd --system --gid nginx --no-create-home --home /nonexistent \
+                    --comment "nginx user" --shell /bin/false --uid 101 nginx
+        fi
+
+        for d in client_temp proxy_temp fastcgi_temp uwsgi_temp scgi_temp; do
+            mkdir -p "/var/cache/nginx/$d"
+        done
+        chown -R nginx:nginx /var/cache/nginx
+        chmod 700 /var/cache/nginx/*_temp
+
+        mkdir -p /var/log/nginx
+        chown nginx:nginx /var/log/nginx
+
+        ldconfig
+        ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+        ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+        ;;
+esac
+
+exit 0

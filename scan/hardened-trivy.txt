@@ -1,0 +1,700 @@
+
+Report Summary
+
+┌──────────────────────────────────────┬────────┬─────────────────┬─────────┐
+│                Target                │  Type  │ Vulnerabilities │ Secrets │
+├──────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ nginx-hardened:1.25.5 (debian 12.15) │ debian │       176       │    -    │
+└──────────────────────────────────────┴────────┴─────────────────┴─────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+
+
+nginx-hardened:1.25.5 (debian 12.15)
+====================================
+Total: 176 (UNKNOWN: 10, LOW: 77, MEDIUM: 65, HIGH: 19, CRITICAL: 5)
+
+┌────────────────────┬─────────────────────┬──────────┬──────────────┬─────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
+│      Library       │    Vulnerability    │ Severity │    Status    │    Installed Version    │ Fixed Version │                            Title                             │
+├────────────────────┼─────────────────────┼──────────┼──────────────┼─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ apt                │ CVE-2011-3374       │ LOW      │ affected     │ 2.6.1                   │               │ It was found that apt-key in apt, all versions, do not       │
+│                    │                     │          │              │                         │               │ correctly...                                                 │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2011-3374                    │
+├────────────────────┼─────────────────────┤          │              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ bash               │ TEMP-0841856-B18BAF │          │              │ 5.2.15-2+b13            │               │ [Privilege escalation possible to other user than root]      │
+│                    │                     │          │              │                         │               │ https://security-tracker.debian.org/tracker/TEMP-0841856-B1- │
+│                    │                     │          │              │                         │               │ 8BAF                                                         │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ bsdutils           │ CVE-2026-53615      │ HIGH     │              │ 1:2.38.1-5+deb12u3      │               │ [Integer Overflow or Wraparound in                           │
+│                    │                     │          │              │                         │               │ libblkid/src/partitions/dos.c]                               │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53615                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-13595      │ MEDIUM   │              │                         │               │ util-linux: util-linux: heap use-after-free in libblkid      │
+│                    │                     │          │              │                         │               │ nested partition probing                                     │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-13595                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-27456      │          │              │                         │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│                    │                     │          │              │                         │               │ devices                                                      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-3184       │          │ will_not_fix │                         │               │ util-linux: util-linux: Access control bypass due to         │
+│                    │                     │          │              │                         │               │ improper hostname canonicalization                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-3184                    │
+│                    ├─────────────────────┼──────────┼──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2022-0563       │ LOW      │ affected     │                         │               │ util-linux: partial disclosure of arbitrary files in chfn    │
+│                    │                     │          │              │                         │               │ and chsh when compiled...                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2022-0563                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-14104      │          │              │                         │               │ util-linux: util-linux: Heap buffer overread in setpwnam()   │
+│                    │                     │          │              │                         │               │ when processing 256-byte usernames                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-14104                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-53613      │ UNKNOWN  │              │                         │               │ [Local Privilege Escalation via TOCTOU in mount(8) - Target  │
+│                    │                     │          │              │                         │               │ Path Redirection]                                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53613                   │
+├────────────────────┼─────────────────────┼──────────┼──────────────┼─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ coreutils          │ CVE-2016-2781       │ LOW      │ will_not_fix │ 9.1-1                   │               │ coreutils: Non-privileged session can escape to the parent   │
+│                    │                     │          │              │                         │               │ session in chroot                                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2016-2781                    │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2017-18018      │          │ affected     │                         │               │ coreutils: race condition vulnerability in chown and chgrp   │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2017-18018                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-5278       │          │              │                         │               │ coreutils: Heap Buffer Under-Read in GNU Coreutils sort via  │
+│                    │                     │          │              │                         │               │ Key Specification                                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-5278                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-56391      │          │              │                         │               │ coreutils: GNU coreutils uniq: Denial of Service and         │
+│                    │                     │          │              │                         │               │ information disclosure via out-of-bounds...                  │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-56391                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-56392      │          │              │                         │               │ coreutils: GNU coreutils unexpand: Denial of Service via     │
+│                    │                     │          │              │                         │               │ crafted tab stop values...                                   │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-56392                   │
+├────────────────────┼─────────────────────┤          │              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ diffutils          │ CVE-2026-53910      │          │              │ 1:3.8-4                 │               │ diffutils: heap‑based buffer overflow due to multiple signed │
+│                    │                     │          │              │                         │               │ integer overflows in line‑mapping...                         │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53910                   │
+├────────────────────┼─────────────────────┤          │              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ gcc-12-base        │ CVE-2022-27943      │          │              │ 12.2.0-14+deb12u1       │               │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows   │
+│                    │                     │          │              │                         │               │ stack exhaustion in demangle_const                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ gpgv               │ CVE-2025-30258      │ MEDIUM   │              │ 2.2.40-1.1+deb12u2      │               │ gnupg: verification DoS due to a malicious subkey in the     │
+│                    │                     │          │              │                         │               │ keyring                                                      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-30258                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-68972      │          │              │                         │               │ gnupg: GnuPG: Signature bypass via form feed character in    │
+│                    │                     │          │              │                         │               │ signed messages                                              │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-68972                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2022-3219       │ LOW      │              │                         │               │ gnupg: denial of service issue (resource consumption) using  │
+│                    │                     │          │              │                         │               │ compressed packets                                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2022-3219                    │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-57062      │          │ fix_deferred │                         │               │ GnuPG: Incorrect cryptographic message parsing               │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-57062                   │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ gzip               │ CVE-2026-41992      │ HIGH     │              │ 1.12-1                  │               │ GNU gzip contains a global buffer overflow vulnerability in  │
+│                    │                     │          │              │                         │               │ the LZH de...                                                │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-41992                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-41991      │ MEDIUM   │              │                         │               │ gzip: gzip: Arbitrary file overwrite via insecure temporary  │
+│                    │                     │          │              │                         │               │ file handling in gzexe...                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-41991                   │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libacl1            │ CVE-2026-54369      │ HIGH     │              │ 2.3.1-3                 │               │ acl: Symlink traversal privilege escalation via libacl       │
+│                    │                     │          │              │                         │               │ functions                                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-54369                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-54370      │ MEDIUM   │              │                         │               │ acl: TOCTOU Symlink Traversal via getfacl/setfacl            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-54370                   │
+├────────────────────┼─────────────────────┼──────────┼──────────────┼─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libapt-pkg6.0      │ CVE-2011-3374       │ LOW      │ affected     │ 2.6.1                   │               │ It was found that apt-key in apt, all versions, do not       │
+│                    │                     │          │              │                         │               │ correctly...                                                 │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2011-3374                    │
+├────────────────────┼─────────────────────┼──────────┼──────────────┼─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libattr1           │ CVE-2026-54371      │ MEDIUM   │ fix_deferred │ 1:2.5.1-4               │               │ attr: attr: Symlink Traversal Privilege Escalation via       │
+│                    │                     │          │              │                         │               │ getfattr and setfattr                                        │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-54371                   │
+├────────────────────┼─────────────────────┼──────────┼──────────────┼─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libblkid1          │ CVE-2026-53615      │ HIGH     │ affected     │ 2.38.1-5+deb12u3        │               │ [Integer Overflow or Wraparound in                           │
+│                    │                     │          │              │                         │               │ libblkid/src/partitions/dos.c]                               │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53615                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-13595      │ MEDIUM   │              │                         │               │ util-linux: util-linux: heap use-after-free in libblkid      │
+│                    │                     │          │              │                         │               │ nested partition probing                                     │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-13595                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-27456      │          │              │                         │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│                    │                     │          │              │                         │               │ devices                                                      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-3184       │          │ will_not_fix │                         │               │ util-linux: util-linux: Access control bypass due to         │
+│                    │                     │          │              │                         │               │ improper hostname canonicalization                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-3184                    │
+│                    ├─────────────────────┼──────────┼──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2022-0563       │ LOW      │ affected     │                         │               │ util-linux: partial disclosure of arbitrary files in chfn    │
+│                    │                     │          │              │                         │               │ and chsh when compiled...                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2022-0563                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-14104      │          │              │                         │               │ util-linux: util-linux: Heap buffer overread in setpwnam()   │
+│                    │                     │          │              │                         │               │ when processing 256-byte usernames                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-14104                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-53613      │ UNKNOWN  │              │                         │               │ [Local Privilege Escalation via TOCTOU in mount(8) - Target  │
+│                    │                     │          │              │                         │               │ Path Redirection]                                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53613                   │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libbz2-1.0         │ CVE-2026-42250      │ MEDIUM   │              │ 1.0.8-5+b1              │               │ bzip2: bzip2: Denial of Service in bzip2recover via a        │
+│                    │                     │          │              │                         │               │ specially crafted file...                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-42250                   │
+├────────────────────┼─────────────────────┤          │              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libc-bin           │ CVE-2026-5435       │          │              │ 2.36-9+deb12u14         │               │ glibc: glibc: Out-of-bounds write via TSIG record processing │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-5435                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-5450       │          │              │                         │               │ glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc`     │
+│                    │                     │          │              │                         │               │ format specifier and...                                      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-5450                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-5928       │          │              │                         │               │ glibc: glibc: Information disclosure or denial of service    │
+│                    │                     │          │              │                         │               │ via ungetwc function with...                                 │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-5928                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-6238       │          │              │                         │               │ glibc: glibc: Application crash or uninitialized memory read │
+│                    │                     │          │              │                         │               │ via crafted DNS response...                                  │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-6238                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-6368       │          │              │                         │               │ glibc: glibc: Process abort due to invalid memory in wordexp │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-6368                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-6791       │          │              │                         │               │ glibc: Glibc: Denial of Service via stack exhaustion during  │
+│                    │                     │          │              │                         │               │ tilde expansion                                              │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-6791                    │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2010-4756       │ LOW      │              │                         │               │ glibc: glob implementation can cause excessive CPU and       │
+│                    │                     │          │              │                         │               │ memory consumption due to...                                 │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2010-4756                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2018-20796      │          │              │                         │               │ glibc: uncontrolled recursion in function                    │
+│                    │                     │          │              │                         │               │ check_dst_limits_calc_pos_1 in posix/regexec.c               │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2018-20796                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2019-1010022    │          │              │                         │               │ glibc: stack guard protection bypass                         │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2019-1010022                 │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2019-1010023    │          │              │                         │               │ glibc: running ldd on malicious ELF leads to code execution  │
+│                    │                     │          │              │                         │               │ because of...                                                │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2019-1010023                 │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2019-1010024    │          │              │                         │               │ glibc: ASLR bypass using cache of thread stack and heap      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2019-1010024                 │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2019-1010025    │          │              │                         │               │ glibc: information disclosure of heap addresses of           │
+│                    │                     │          │              │                         │               │ pthread_created thread                                       │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2019-1010025                 │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2019-9192       │          │              │                         │               │ glibc: uncontrolled recursion in function                    │
+│                    │                     │          │              │                         │               │ check_dst_limits_calc_pos_1 in posix/regexec.c               │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2019-9192                    │
+├────────────────────┼─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ libc6              │ CVE-2026-5435       │ MEDIUM   │              │                         │               │ glibc: glibc: Out-of-bounds write via TSIG record processing │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-5435                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-5450       │          │              │                         │               │ glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc`     │
+│                    │                     │          │              │                         │               │ format specifier and...                                      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-5450                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-5928       │          │              │                         │               │ glibc: glibc: Information disclosure or denial of service    │
+│                    │                     │          │              │                         │               │ via ungetwc function with...                                 │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-5928                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-6238       │          │              │                         │               │ glibc: glibc: Application crash or uninitialized memory read │
+│                    │                     │          │              │                         │               │ via crafted DNS response...                                  │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-6238                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-6368       │          │              │                         │               │ glibc: glibc: Process abort due to invalid memory in wordexp │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-6368                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-6791       │          │              │                         │               │ glibc: Glibc: Denial of Service via stack exhaustion during  │
+│                    │                     │          │              │                         │               │ tilde expansion                                              │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-6791                    │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2010-4756       │ LOW      │              │                         │               │ glibc: glob implementation can cause excessive CPU and       │
+│                    │                     │          │              │                         │               │ memory consumption due to...                                 │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2010-4756                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2018-20796      │          │              │                         │               │ glibc: uncontrolled recursion in function                    │
+│                    │                     │          │              │                         │               │ check_dst_limits_calc_pos_1 in posix/regexec.c               │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2018-20796                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2019-1010022    │          │              │                         │               │ glibc: stack guard protection bypass                         │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2019-1010022                 │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2019-1010023    │          │              │                         │               │ glibc: running ldd on malicious ELF leads to code execution  │
+│                    │                     │          │              │                         │               │ because of...                                                │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2019-1010023                 │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2019-1010024    │          │              │                         │               │ glibc: ASLR bypass using cache of thread stack and heap      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2019-1010024                 │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2019-1010025    │          │              │                         │               │ glibc: information disclosure of heap addresses of           │
+│                    │                     │          │              │                         │               │ pthread_created thread                                       │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2019-1010025                 │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2019-9192       │          │              │                         │               │ glibc: uncontrolled recursion in function                    │
+│                    │                     │          │              │                         │               │ check_dst_limits_calc_pos_1 in posix/regexec.c               │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2019-9192                    │
+├────────────────────┼─────────────────────┤          │              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libgcc-s1          │ CVE-2022-27943      │          │              │ 12.2.0-14+deb12u1       │               │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows   │
+│                    │                     │          │              │                         │               │ stack exhaustion in demangle_const                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
+├────────────────────┼─────────────────────┤          │              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libgcrypt20        │ CVE-2018-6829       │          │              │ 1.10.1-3+deb12u1        │               │ libgcrypt: ElGamal implementation doesn't have semantic      │
+│                    │                     │          │              │                         │               │ security due to incorrectly encoded plaintexts...            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2018-6829                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-2236       │          │              │                         │               │ libgcrypt: vulnerable to Marvin Attack                       │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2024-2236                    │
+├────────────────────┼─────────────────────┤          │              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libgnutls30        │ CVE-2011-3389       │          │              │ 3.7.9-2+deb12u7         │               │ HTTPS: block-wise chosen-plaintext attack against SSL/TLS    │
+│                    │                     │          │              │                         │               │ (BEAST)                                                      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2011-3389                    │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libmount1          │ CVE-2026-53615      │ HIGH     │              │ 2.38.1-5+deb12u3        │               │ [Integer Overflow or Wraparound in                           │
+│                    │                     │          │              │                         │               │ libblkid/src/partitions/dos.c]                               │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53615                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-13595      │ MEDIUM   │              │                         │               │ util-linux: util-linux: heap use-after-free in libblkid      │
+│                    │                     │          │              │                         │               │ nested partition probing                                     │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-13595                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-27456      │          │              │                         │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│                    │                     │          │              │                         │               │ devices                                                      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-3184       │          │ will_not_fix │                         │               │ util-linux: util-linux: Access control bypass due to         │
+│                    │                     │          │              │                         │               │ improper hostname canonicalization                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-3184                    │
+│                    ├─────────────────────┼──────────┼──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2022-0563       │ LOW      │ affected     │                         │               │ util-linux: partial disclosure of arbitrary files in chfn    │
+│                    │                     │          │              │                         │               │ and chsh when compiled...                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2022-0563                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-14104      │          │              │                         │               │ util-linux: util-linux: Heap buffer overread in setpwnam()   │
+│                    │                     │          │              │                         │               │ when processing 256-byte usernames                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-14104                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-53613      │ UNKNOWN  │              │                         │               │ [Local Privilege Escalation via TOCTOU in mount(8) - Target  │
+│                    │                     │          │              │                         │               │ Path Redirection]                                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53613                   │
+├────────────────────┼─────────────────────┼──────────┼──────────────┼─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libp11-kit0        │ CVE-2026-13757      │ MEDIUM   │ fix_deferred │ 0.24.1-2                │               │ p11-kit: Stack exhaustion via unbounded recursion in RPC     │
+│                    │                     │          │              │                         │               │ attribute parsing                                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-13757                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-18938      │          │ affected     │                         │               │ p11-kit: Integer overflow in RPC attribute-array length      │
+│                    │                     │          │              │                         │               │ calculation can under-allocate nested attribute...           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-18938                   │
+├────────────────────┼─────────────────────┤          ├──────────────┼─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libpam-modules     │ CVE-2024-10041      │          │ will_not_fix │ 1.5.2-6+deb12u2         │               │ pam: libpam: Libpam vulnerable to read hashed password       │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2024-10041                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-54411      │          │ fix_deferred │                         │               │ linux-pam: Plaintext password recovery via timing            │
+│                    │                     │          │              │                         │               │ discrepancy in pam_userdb module                             │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-54411                   │
+├────────────────────┼─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ libpam-modules-bin │ CVE-2024-10041      │          │ will_not_fix │                         │               │ pam: libpam: Libpam vulnerable to read hashed password       │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2024-10041                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-54411      │          │ fix_deferred │                         │               │ linux-pam: Plaintext password recovery via timing            │
+│                    │                     │          │              │                         │               │ discrepancy in pam_userdb module                             │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-54411                   │
+├────────────────────┼─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ libpam-runtime     │ CVE-2024-10041      │          │ will_not_fix │                         │               │ pam: libpam: Libpam vulnerable to read hashed password       │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2024-10041                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-54411      │          │ fix_deferred │                         │               │ linux-pam: Plaintext password recovery via timing            │
+│                    │                     │          │              │                         │               │ discrepancy in pam_userdb module                             │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-54411                   │
+├────────────────────┼─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ libpam0g           │ CVE-2024-10041      │          │ will_not_fix │                         │               │ pam: libpam: Libpam vulnerable to read hashed password       │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2024-10041                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-54411      │          │ fix_deferred │                         │               │ linux-pam: Plaintext password recovery via timing            │
+│                    │                     │          │              │                         │               │ discrepancy in pam_userdb module                             │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-54411                   │
+├────────────────────┼─────────────────────┼──────────┼──────────────┼─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libsmartcols1      │ CVE-2026-53615      │ HIGH     │ affected     │ 2.38.1-5+deb12u3        │               │ [Integer Overflow or Wraparound in                           │
+│                    │                     │          │              │                         │               │ libblkid/src/partitions/dos.c]                               │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53615                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-13595      │ MEDIUM   │              │                         │               │ util-linux: util-linux: heap use-after-free in libblkid      │
+│                    │                     │          │              │                         │               │ nested partition probing                                     │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-13595                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-27456      │          │              │                         │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│                    │                     │          │              │                         │               │ devices                                                      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-3184       │          │ will_not_fix │                         │               │ util-linux: util-linux: Access control bypass due to         │
+│                    │                     │          │              │                         │               │ improper hostname canonicalization                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-3184                    │
+│                    ├─────────────────────┼──────────┼──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2022-0563       │ LOW      │ affected     │                         │               │ util-linux: partial disclosure of arbitrary files in chfn    │
+│                    │                     │          │              │                         │               │ and chsh when compiled...                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2022-0563                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-14104      │          │              │                         │               │ util-linux: util-linux: Heap buffer overread in setpwnam()   │
+│                    │                     │          │              │                         │               │ when processing 256-byte usernames                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-14104                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-53613      │ UNKNOWN  │              │                         │               │ [Local Privilege Escalation via TOCTOU in mount(8) - Target  │
+│                    │                     │          │              │                         │               │ Path Redirection]                                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53613                   │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libstdc++6         │ CVE-2022-27943      │ LOW      │              │ 12.2.0-14+deb12u1       │               │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows   │
+│                    │                     │          │              │                         │               │ stack exhaustion in demangle_const                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
+├────────────────────┼─────────────────────┤          │              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libsystemd0        │ CVE-2013-4392       │          │              │ 252.39-1~deb12u2        │               │ systemd: TOCTOU race condition when updating file            │
+│                    │                     │          │              │                         │               │ permissions and SELinux security contexts...                 │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2013-4392                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-31437      │          │              │                         │               │ An issue was discovered in systemd 253. An attacker can      │
+│                    │                     │          │              │                         │               │ modify a...                                                  │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2023-31437                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-31438      │          │              │                         │               │ An issue was discovered in systemd 253. An attacker can      │
+│                    │                     │          │              │                         │               │ truncate a...                                                │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2023-31438                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-31439      │          │              │                         │               │ An issue was discovered in systemd 253. An attacker can      │
+│                    │                     │          │              │                         │               │ modify the...                                                │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2023-31439                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-40228      │          │              │                         │               │ systemd: systemd-journald: Unintended output to user         │
+│                    │                     │          │              │                         │               │ terminals via logger command                                 │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-40228                   │
+├────────────────────┼─────────────────────┤          │              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libtasn1-6         │ CVE-2025-13151      │          │              │ 4.19.0-2+deb12u1        │               │ libtasn1: libtasn1: Denial of Service via stack-based buffer │
+│                    │                     │          │              │                         │               │ overflow in asn1_expend_octet_string                         │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-13151                   │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libtinfo6          │ CVE-2025-69720      │ HIGH     │              │ 6.4-4                   │               │ ncurses: ncurses: Buffer overflow vulnerability may lead to  │
+│                    │                     │          │              │                         │               │ arbitrary code execution.                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-69720                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-50495      │ MEDIUM   │              │                         │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-6141       │ LOW      │              │                         │               │ gnu-ncurses: ncurses Stack Buffer Overflow                   │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-6141                    │
+├────────────────────┼─────────────────────┤          │              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libudev1           │ CVE-2013-4392       │          │              │ 252.39-1~deb12u2        │               │ systemd: TOCTOU race condition when updating file            │
+│                    │                     │          │              │                         │               │ permissions and SELinux security contexts...                 │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2013-4392                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-31437      │          │              │                         │               │ An issue was discovered in systemd 253. An attacker can      │
+│                    │                     │          │              │                         │               │ modify a...                                                  │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2023-31437                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-31438      │          │              │                         │               │ An issue was discovered in systemd 253. An attacker can      │
+│                    │                     │          │              │                         │               │ truncate a...                                                │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2023-31438                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-31439      │          │              │                         │               │ An issue was discovered in systemd 253. An attacker can      │
+│                    │                     │          │              │                         │               │ modify the...                                                │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2023-31439                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-40228      │          │              │                         │               │ systemd: systemd-journald: Unintended output to user         │
+│                    │                     │          │              │                         │               │ terminals via logger command                                 │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-40228                   │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libuuid1           │ CVE-2026-53615      │ HIGH     │              │ 2.38.1-5+deb12u3        │               │ [Integer Overflow or Wraparound in                           │
+│                    │                     │          │              │                         │               │ libblkid/src/partitions/dos.c]                               │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53615                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-13595      │ MEDIUM   │              │                         │               │ util-linux: util-linux: heap use-after-free in libblkid      │
+│                    │                     │          │              │                         │               │ nested partition probing                                     │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-13595                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-27456      │          │              │                         │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│                    │                     │          │              │                         │               │ devices                                                      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-3184       │          │ will_not_fix │                         │               │ util-linux: util-linux: Access control bypass due to         │
+│                    │                     │          │              │                         │               │ improper hostname canonicalization                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-3184                    │
+│                    ├─────────────────────┼──────────┼──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2022-0563       │ LOW      │ affected     │                         │               │ util-linux: partial disclosure of arbitrary files in chfn    │
+│                    │                     │          │              │                         │               │ and chsh when compiled...                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2022-0563                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-14104      │          │              │                         │               │ util-linux: util-linux: Heap buffer overread in setpwnam()   │
+│                    │                     │          │              │                         │               │ when processing 256-byte usernames                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-14104                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-53613      │ UNKNOWN  │              │                         │               │ [Local Privilege Escalation via TOCTOU in mount(8) - Target  │
+│                    │                     │          │              │                         │               │ Path Redirection]                                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53613                   │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ login              │ CVE-2007-5686       │ LOW      │              │ 1:4.13+dfsg1-1+deb12u2  │               │ initscripts in rPath Linux 1 sets insecure permissions for   │
+│                    │                     │          │              │                         │               │ the /var/lo ......                                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2007-5686                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-56433      │          │              │                         │               │ shadow-utils: Default subordinate ID configuration in        │
+│                    │                     │          │              │                         │               │ /etc/login.defs could lead to compromise                     │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2024-56433                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ TEMP-0628843-DBAD28 │          │              │                         │               │ [more related to CVE-2005-4890]                              │
+│                    │                     │          │              │                         │               │ https://security-tracker.debian.org/tracker/TEMP-0628843-DB- │
+│                    │                     │          │              │                         │               │ AD28                                                         │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ mount              │ CVE-2026-53615      │ HIGH     │              │ 2.38.1-5+deb12u3        │               │ [Integer Overflow or Wraparound in                           │
+│                    │                     │          │              │                         │               │ libblkid/src/partitions/dos.c]                               │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53615                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-13595      │ MEDIUM   │              │                         │               │ util-linux: util-linux: heap use-after-free in libblkid      │
+│                    │                     │          │              │                         │               │ nested partition probing                                     │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-13595                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-27456      │          │              │                         │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│                    │                     │          │              │                         │               │ devices                                                      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-3184       │          │ will_not_fix │                         │               │ util-linux: util-linux: Access control bypass due to         │
+│                    │                     │          │              │                         │               │ improper hostname canonicalization                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-3184                    │
+│                    ├─────────────────────┼──────────┼──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2022-0563       │ LOW      │ affected     │                         │               │ util-linux: partial disclosure of arbitrary files in chfn    │
+│                    │                     │          │              │                         │               │ and chsh when compiled...                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2022-0563                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-14104      │          │              │                         │               │ util-linux: util-linux: Heap buffer overread in setpwnam()   │
+│                    │                     │          │              │                         │               │ when processing 256-byte usernames                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-14104                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-53613      │ UNKNOWN  │              │                         │               │ [Local Privilege Escalation via TOCTOU in mount(8) - Target  │
+│                    │                     │          │              │                         │               │ Path Redirection]                                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53613                   │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ ncurses-base       │ CVE-2025-69720      │ HIGH     │              │ 6.4-4                   │               │ ncurses: ncurses: Buffer overflow vulnerability may lead to  │
+│                    │                     │          │              │                         │               │ arbitrary code execution.                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-69720                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-50495      │ MEDIUM   │              │                         │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-6141       │ LOW      │              │                         │               │ gnu-ncurses: ncurses Stack Buffer Overflow                   │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-6141                    │
+├────────────────────┼─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ ncurses-bin        │ CVE-2025-69720      │ HIGH     │              │                         │               │ ncurses: ncurses: Buffer overflow vulnerability may lead to  │
+│                    │                     │          │              │                         │               │ arbitrary code execution.                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-69720                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-50495      │ MEDIUM   │              │                         │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-6141       │ LOW      │              │                         │               │ gnu-ncurses: ncurses Stack Buffer Overflow                   │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-6141                    │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ nginx              │ CVE-2026-42533      │ HIGH     │              │ 1.25.5-1+echo1~bookworm │               │ nginx: NGINX: Arbitrary code execution via crafted HTTP      │
+│                    │                     │          │              │                         │               │ requests                                                     │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-42533                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-60005      │          │              │                         │               │ nginx: NGINX: Memory disclosure and denial of service in     │
+│                    │                     │          │              │                         │               │ ngx_http_slice_module                                        │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-60005                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-56434      │ MEDIUM   │              │                         │               │ nginx: NGINX: Heap buffer over-read allows memory            │
+│                    │                     │          │              │                         │               │ modification or denial of service...                         │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-56434                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2009-4487       │ LOW      │              │                         │               │ nginx: Absent sanitation of escape sequences in web server   │
+│                    │                     │          │              │                         │               │ log                                                          │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2009-4487                    │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2013-0337       │          │ will_not_fix │                         │               │ The default configuration of nginx, possibly 1.3.13 and      │
+│                    │                     │          │              │                         │               │ earlier, uses ......                                         │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2013-0337                    │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-44487      │          │ affected     │                         │               │ HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable   │
+│                    │                     │          │              │                         │               │ to a DDoS attack...                                          │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2023-44487                   │
+├────────────────────┼─────────────────────┤          │              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ nginx-openssl      │ CVE-2025-27587      │          │              │ 3.0.21-1+echo1~bookworm │               │ OpenSSL 3.0.0 through 3.3.2 on the PowerPC architecture is   │
+│                    │                     │          │              │                         │               │ vulnerable ......                                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-27587                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-42767      │          │              │                         │               │ openssl: NULL Pointer Dereference in CRMF EncryptedValue     │
+│                    │                     │          │              │                         │               │ Decryption                                                   │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-42767                   │
+├────────────────────┼─────────────────────┤          │              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ passwd             │ CVE-2007-5686       │          │              │ 1:4.13+dfsg1-1+deb12u2  │               │ initscripts in rPath Linux 1 sets insecure permissions for   │
+│                    │                     │          │              │                         │               │ the /var/lo ......                                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2007-5686                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-56433      │          │              │                         │               │ shadow-utils: Default subordinate ID configuration in        │
+│                    │                     │          │              │                         │               │ /etc/login.defs could lead to compromise                     │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2024-56433                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ TEMP-0628843-DBAD28 │          │              │                         │               │ [more related to CVE-2005-4890]                              │
+│                    │                     │          │              │                         │               │ https://security-tracker.debian.org/tracker/TEMP-0628843-DB- │
+│                    │                     │          │              │                         │               │ AD28                                                         │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ perl-base          │ CVE-2026-13221      │ CRITICAL │              │ 5.36.0-7+deb12u3        │               │ Perl versions through 5.43.9 produce silently incorrect      │
+│                    │                     │          │              │                         │               │ regular expres ...                                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-13221                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-42496      │          │ fix_deferred │                         │               │ perl-archive-tar: perl-archive-tar: Path traversal via       │
+│                    │                     │          │              │                         │               │ crafted symlinks allows arbitrary file access                │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-42496                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-57433      │          │ affected     │                         │               │ Storable versions before 3.41 for Perl have a signed integer │
+│                    │                     │          │              │                         │               │ overflow ...                                                 │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-57433                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-8376       │          │              │                         │               │ perl: Perl: Heap buffer overflow when compiling regular      │
+│                    │                     │          │              │                         │               │ expressions on 32-bit builds...                              │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-8376                    │
+│                    ├─────────────────────┼──────────┼──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-42497      │ HIGH     │ fix_deferred │                         │               │ perl-Archive-Tar: perl-Archive-Tar: Arbitrary file           │
+│                    │                     │          │              │                         │               │ modification via crafted hardlinks during archive extraction │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-42497                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-48962      │          │ affected     │                         │               │ perl-IO-Compress: perl-IO-Compress: Arbitrary code execution │
+│                    │                     │          │              │                         │               │ via attacker-controlled output glob                          │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-48962                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-57432      │          │              │                         │               │ perl: Perl: Information disclosure via integer overflow in   │
+│                    │                     │          │              │                         │               │ pack/unpack operations                                       │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-57432                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-9538       │          │ fix_deferred │                         │               │ perl-Archive-Tar: perl-Archive-Tar: Denial of Service via    │
+│                    │                     │          │              │                         │               │ crafted tar header with large entry...                       │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-9538                    │
+│                    ├─────────────────────┼──────────┼──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-15649      │ MEDIUM   │ affected     │                         │               │ perl-IO-Compress: perl-IO-Compress: Denial of Service via    │
+│                    │                     │          │              │                         │               │ malformed DOS date in zip header...                          │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-15649                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-12087      │          │              │                         │               │ perl-Socket: perl-Socket: Information Disclosure due to      │
+│                    │                     │          │              │                         │               │ Out-of-Bounds Read                                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-12087                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-48959      │          │              │                         │               │ perl-IO-Compress: perl-IO-Compress: CPU exhaustion via       │
+│                    │                     │          │              │                         │               │ per-byte read loop in fastForward                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-48959                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-48961      │          │              │                         │               │ perl-IO-Compress: IO::Compress: Denial of Service in         │
+│                    │                     │          │              │                         │               │ zipdetails CLI tool via malformed Info-ZIP...                │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-48961                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-7010       │          │              │                         │               │ HTTP::Tiny versions before 0.093 for Perl do not validate    │
+│                    │                     │          │              │                         │               │ CRLF in HTTP...                                              │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-7010                    │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2011-4116       │ LOW      │              │                         │               │ perl: File:: Temp insecure temporary file handling           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2011-4116                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-31486      │          │              │                         │               │ http-tiny: perl: insecure TLS cert default                   │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2023-31486                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-15534      │ UNKNOWN  │              │                         │               │ Perl versions through 5.45.1 have out-of-bounds heap reads   │
+│                    │                     │          │              │                         │               │ and writes ......                                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-15534                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-7017       │          │              │                         │               │ HTTP::Tiny versions before 0.095 for Perl forward credential │
+│                    │                     │          │              │                         │               │ headers t ...                                                │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-7017                    │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ sysvinit-utils     │ TEMP-0517018-A83CE6 │ LOW      │              │ 3.06-4                  │               │ [sysvinit: no-root option in expert installer exposes        │
+│                    │                     │          │              │                         │               │ locally exploitable security flaw]                           │
+│                    │                     │          │              │                         │               │ https://security-tracker.debian.org/tracker/TEMP-0517018-A8- │
+│                    │                     │          │              │                         │               │ 3CE6                                                         │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ tar                │ CVE-2026-18477      │ MEDIUM   │              │ 1.34+dfsg-1.2+deb12u1   │               │ tar: tar: TOCTOU in incremental dumpdir 'X' rename handling  │
+│                    │                     │          │              │                         │               │ allows restore path...                                       │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-18477                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-18508      │          │              │                         │               │ tar: tar: --one-top-level hardlink targets not confined to   │
+│                    │                     │          │              │                         │               │ top-level directory enabling arbitrary...                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-18508                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-5704       │          │              │                         │               │ tar: tar: Hidden file injection via crafted archives         │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-5704                    │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2005-2541       │ LOW      │              │                         │               │ tar: does not properly warn the user when extracting setuid  │
+│                    │                     │          │              │                         │               │ or setgid...                                                 │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2005-2541                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ TEMP-0290435-0B57B5 │          │              │                         │               │ [tar's rmt command may have undesired side effects]          │
+│                    │                     │          │              │                         │               │ https://security-tracker.debian.org/tracker/TEMP-0290435-0B- │
+│                    │                     │          │              │                         │               │ 57B5                                                         │
+├────────────────────┼─────────────────────┼──────────┤              ├─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ util-linux         │ CVE-2026-53615      │ HIGH     │              │ 2.38.1-5+deb12u3        │               │ [Integer Overflow or Wraparound in                           │
+│                    │                     │          │              │                         │               │ libblkid/src/partitions/dos.c]                               │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53615                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-13595      │ MEDIUM   │              │                         │               │ util-linux: util-linux: heap use-after-free in libblkid      │
+│                    │                     │          │              │                         │               │ nested partition probing                                     │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-13595                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-27456      │          │              │                         │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│                    │                     │          │              │                         │               │ devices                                                      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-3184       │          │ will_not_fix │                         │               │ util-linux: util-linux: Access control bypass due to         │
+│                    │                     │          │              │                         │               │ improper hostname canonicalization                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-3184                    │
+│                    ├─────────────────────┼──────────┼──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2022-0563       │ LOW      │ affected     │                         │               │ util-linux: partial disclosure of arbitrary files in chfn    │
+│                    │                     │          │              │                         │               │ and chsh when compiled...                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2022-0563                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-14104      │          │              │                         │               │ util-linux: util-linux: Heap buffer overread in setpwnam()   │
+│                    │                     │          │              │                         │               │ when processing 256-byte usernames                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-14104                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-53613      │ UNKNOWN  │              │                         │               │ [Local Privilege Escalation via TOCTOU in mount(8) - Target  │
+│                    │                     │          │              │                         │               │ Path Redirection]                                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53613                   │
+├────────────────────┼─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ util-linux-extra   │ CVE-2026-53615      │ HIGH     │              │                         │               │ [Integer Overflow or Wraparound in                           │
+│                    │                     │          │              │                         │               │ libblkid/src/partitions/dos.c]                               │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53615                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-13595      │ MEDIUM   │              │                         │               │ util-linux: util-linux: heap use-after-free in libblkid      │
+│                    │                     │          │              │                         │               │ nested partition probing                                     │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-13595                   │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-27456      │          │              │                         │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│                    │                     │          │              │                         │               │ devices                                                      │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+│                    ├─────────────────────┤          ├──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-3184       │          │ will_not_fix │                         │               │ util-linux: util-linux: Access control bypass due to         │
+│                    │                     │          │              │                         │               │ improper hostname canonicalization                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-3184                    │
+│                    ├─────────────────────┼──────────┼──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2022-0563       │ LOW      │ affected     │                         │               │ util-linux: partial disclosure of arbitrary files in chfn    │
+│                    │                     │          │              │                         │               │ and chsh when compiled...                                    │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2022-0563                    │
+│                    ├─────────────────────┤          │              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-14104      │          │              │                         │               │ util-linux: util-linux: Heap buffer overread in setpwnam()   │
+│                    │                     │          │              │                         │               │ when processing 256-byte usernames                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2025-14104                   │
+│                    ├─────────────────────┼──────────┤              │                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-53613      │ UNKNOWN  │              │                         │               │ [Local Privilege Escalation via TOCTOU in mount(8) - Target  │
+│                    │                     │          │              │                         │               │ Path Redirection]                                            │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-53613                   │
+├────────────────────┼─────────────────────┼──────────┼──────────────┼─────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ zlib1g             │ CVE-2023-45853      │ CRITICAL │ will_not_fix │ 1:1.2.13.dfsg-1         │               │ zlib: integer overflow and resultant heap-based buffer       │
+│                    │                     │          │              │                         │               │ overflow in zipOpenNewFileInZip4_6                           │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2023-45853                   │
+│                    ├─────────────────────┼──────────┼──────────────┤                         ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-27171      │ MEDIUM   │ affected     │                         │               │ zlib: zlib: Denial of Service via infinite loop in CRC32     │
+│                    │                     │          │              │                         │               │ combine functions...                                         │
+│                    │                     │          │              │                         │               │ https://avd.aquasec.com/nvd/cve-2026-27171                   │
+└────────────────────┴─────────────────────┴──────────┴──────────────┴─────────────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘

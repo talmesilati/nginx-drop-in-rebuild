@@ -1,0 +1,613 @@
+NAME                INSTALLED                FIXED IN                 TYPE  VULNERABILITY     SEVERITY    EPSS           RISK          
+libfreetype6        2.12.1+dfsg-5            2.12.1+dfsg-5+deb12u4    deb   CVE-2025-27363    High        27.6% (97th)   81.9   (kev)  
+nginx               1.25.5-1~bookworm                                 deb   CVE-2023-44487    High        100.0% (99th)  78.8   (kev)  
+libsystemd0         252.22-1~deb12u1         252.23-1~deb12u1         deb   CVE-2023-50387    High        100.0% (99th)  75.0          
+libudev1            252.22-1~deb12u1         252.23-1~deb12u1         deb   CVE-2023-50387    High        100.0% (99th)  75.0          
+libsystemd0         252.22-1~deb12u1         252.23-1~deb12u1         deb   CVE-2023-50868    High        81.7% (99th)   61.3          
+libudev1            252.22-1~deb12u1         252.23-1~deb12u1         deb   CVE-2023-50868    High        81.7% (99th)   61.3          
+libssl3             3.0.11-1~deb12u2         3.0.14-1~deb12u2         deb   CVE-2024-6119     High        66.6% (99th)   49.9          
+openssl             3.0.11-1~deb12u2         3.0.14-1~deb12u2         deb   CVE-2024-6119     High        66.6% (99th)   49.9          
+libssl3             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2025-15467    Critical    47.6% (98th)   44.8          
+openssl             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2025-15467    Critical    47.6% (98th)   44.8          
+libnghttp2-14       1.52.0-1+deb12u1         1.52.0-1+deb12u2         deb   CVE-2024-28182    Medium      85.0% (99th)   43.8          
+libssl3             3.0.11-1~deb12u2         3.0.14-1~deb12u1         deb   CVE-2024-2511     Medium      54.0% (98th)   29.4          
+openssl             3.0.11-1~deb12u2         3.0.14-1~deb12u1         deb   CVE-2024-2511     Medium      54.0% (98th)   29.4          
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u6        deb   CVE-2024-2398     High        36.1% (98th)   29.0          
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u6        deb   CVE-2024-2398     High        36.1% (98th)   29.0          
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u7        deb   CVE-2024-7264     Medium      17.3% (96th)   9.9           
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u7        deb   CVE-2024-7264     Medium      17.3% (96th)   9.9           
+libssl3             3.0.11-1~deb12u2         3.0.15-1~deb12u1         deb   CVE-2024-5535     Critical    5.6% (92nd)    5.1           
+openssl             3.0.11-1~deb12u2         3.0.15-1~deb12u1         deb   CVE-2024-5535     Critical    5.6% (92nd)    5.1           
+libssl3             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-45447    High        5.2% (91st)    4.1           
+openssl             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-45447    High        5.2% (91st)    4.1           
+libgnutls30         3.7.9-2+deb12u2                                   deb   CVE-2011-3389     Negligible  73.3% (99th)   3.7           
+nginx               1.25.5-1~bookworm                                 deb   CVE-2026-42533    Critical    3.5% (88th)    3.2           
+libssl3             3.0.11-1~deb12u2         3.0.15-1~deb12u1         deb   CVE-2024-9143     Medium      5.8% (92nd)    2.7           
+openssl             3.0.11-1~deb12u2         3.0.15-1~deb12u1         deb   CVE-2024-9143     Medium      5.8% (92nd)    2.7           
+libssl3             3.0.11-1~deb12u2         3.0.13-1~deb12u1         deb   CVE-2023-5678     Medium      4.5% (90th)    2.3           
+openssl             3.0.11-1~deb12u2         3.0.13-1~deb12u1         deb   CVE-2023-5678     Medium      4.5% (90th)    2.3           
+libssl3             3.0.11-1~deb12u2         3.0.14-1~deb12u1         deb   CVE-2024-4741     High        2.9% (85th)    2.2           
+openssl             3.0.11-1~deb12u2         3.0.14-1~deb12u1         deb   CVE-2024-4741     High        2.9% (85th)    2.2           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u2  deb   CVE-2024-34459    High        2.3% (81st)    1.7           
+libgssapi-krb5-2    1.20.1-2+deb12u1         1.20.1-2+deb12u2         deb   CVE-2024-37371    Critical    1.9% (77th)    1.7           
+libk5crypto3        1.20.1-2+deb12u1         1.20.1-2+deb12u2         deb   CVE-2024-37371    Critical    1.9% (77th)    1.7           
+libkrb5-3           1.20.1-2+deb12u1         1.20.1-2+deb12u2         deb   CVE-2024-37371    Critical    1.9% (77th)    1.7           
+libkrb5support0     1.20.1-2+deb12u1         1.20.1-2+deb12u2         deb   CVE-2024-37371    Critical    1.9% (77th)    1.7           
+libssl3             3.0.11-1~deb12u2         3.0.13-1~deb12u1         deb   CVE-2024-0727     Medium      3.2% (86th)    1.7           
+openssl             3.0.11-1~deb12u2         3.0.13-1~deb12u1         deb   CVE-2024-0727     Medium      3.2% (86th)    1.7           
+libtiff6            4.5.0-6+deb12u1          4.5.0-6+deb12u2          deb   CVE-2023-52356    High        2.2% (80th)    1.6           
+nginx               1.25.5-1~bookworm                                 deb   CVE-2009-4487     Negligible  29.5% (98th)   1.5           
+libldap-2.5-0       2.5.13+dfsg-5            (won't fix)              deb   CVE-2023-2953     High        1.9% (78th)    1.5           
+libtiff6            4.5.0-6+deb12u1          (won't fix)              deb   CVE-2023-52355    High        1.8% (76th)    1.4           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u3  deb   CVE-2025-49796    Critical    1.5% (72nd)    1.4           
+libexpat1           2.5.0-1                  2.5.0-1+deb12u2          deb   CVE-2023-52425    High        1.8% (76th)    1.4           
+libssl3             3.0.11-1~deb12u2         3.0.13-1~deb12u1         deb   CVE-2023-6129     Medium      2.3% (81st)    1.3           
+openssl             3.0.11-1~deb12u2         3.0.13-1~deb12u1         deb   CVE-2023-6129     Medium      2.3% (81st)    1.3           
+libexpat1           2.5.0-1                  2.5.0-1+deb12u1          deb   CVE-2024-45492    Critical    1.4% (69th)    1.3           
+libssl3             3.0.11-1~deb12u2         3.0.17-1~deb12u3         deb   CVE-2025-9230     High        1.7% (75th)    1.3           
+openssl             3.0.11-1~deb12u2         3.0.17-1~deb12u3         deb   CVE-2025-9230     High        1.7% (75th)    1.3           
+libexpat1           2.5.0-1                  2.5.0-1+deb12u1          deb   CVE-2024-45490    High        1.7% (74th)    1.3           
+libssl3             3.0.11-1~deb12u2         3.0.13-1~deb12u1         deb   CVE-2023-6237     Medium      2.3% (81st)    1.3           
+openssl             3.0.11-1~deb12u2         3.0.13-1~deb12u1         deb   CVE-2023-6237     Medium      2.3% (81st)    1.3           
+libssl3             3.0.11-1~deb12u2         3.0.17-1~deb12u3         deb   CVE-2025-9232     Medium      2.3% (81st)    1.2           
+openssl             3.0.11-1~deb12u2         3.0.17-1~deb12u3         deb   CVE-2025-9232     Medium      2.3% (81st)    1.2           
+perl-base           5.36.0-7+deb12u1         5.36.0-7+deb12u3         deb   CVE-2023-31484    High        1.5% (72nd)    1.2           
+libexpat1           2.5.0-1                  2.5.0-1+deb12u2          deb   CVE-2024-8176     High        1.6% (73rd)    1.2           
+libaom3             3.6.0-1                  3.6.0-1+deb12u1          deb   CVE-2024-5171     Critical    1.3% (66th)    1.2           
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u9        deb   CVE-2024-9681     Medium      2.0% (79th)    1.2           
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u9        deb   CVE-2024-9681     Medium      2.0% (79th)    1.2           
+libtiff6            4.5.0-6+deb12u1          4.5.0-6+deb12u2          deb   CVE-2024-7006     High        1.5% (72nd)    1.1           
+libaom3             3.6.0-1                  (won't fix)              deb   CVE-2023-6879     Critical    1.2% (64th)    1.1           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u2  deb   CVE-2024-56171    Critical    1.1% (63rd)    1.1           
+libexpat1           2.5.0-1                  2.5.0-1+deb12u1          deb   CVE-2024-45491    Critical    1.1% (63rd)    1.1           
+libtiff6            4.5.0-6+deb12u1          (won't fix)              deb   CVE-2023-6277     Medium      1.8% (76th)    1.0           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u2  deb   CVE-2024-25062    High        1.4% (69th)    1.0           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u7          deb   CVE-2026-42009    High        1.3% (68th)    1.0           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u7          deb   CVE-2026-42010    Critical    1.1% (61st)    1.0           
+libexpat1           2.5.0-1                  (won't fix)              deb   CVE-2025-59375    High        1.3% (67th)    1.0           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u7          deb   CVE-2026-33846    High        1.3% (66th)    0.9           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u5          deb   CVE-2025-32988    High        1.2% (64th)    0.9           
+libssl3             3.0.11-1~deb12u2         3.0.19-1~deb12u2         deb   CVE-2026-31790    High        1.2% (65th)    0.9           
+openssl             3.0.11-1~deb12u2         3.0.19-1~deb12u2         deb   CVE-2026-31790    High        1.2% (65th)    0.9           
+libxslt1.1          1.1.35-1                 1.1.35-1+deb12u2         deb   CVE-2025-7424     High        1.2% (65th)    0.9           
+libtasn1-6          4.19.0-2                 (won't fix)              deb   CVE-2025-13151    High        1.1% (63rd)    0.8           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u3  deb   CVE-2025-6021     High        1.1% (63rd)    0.8           
+libssl3             3.0.11-1~deb12u2         3.0.19-1~deb12u2         deb   CVE-2026-28388    High        1.1% (61st)    0.8           
+openssl             3.0.11-1~deb12u2         3.0.19-1~deb12u2         deb   CVE-2026-28388    High        1.1% (61st)    0.8           
+libpng16-16         1.6.39-2                 1.6.39-2+deb12u4         deb   CVE-2026-33416    High        1.1% (61st)    0.8           
+libssl3             3.0.11-1~deb12u2         3.0.19-1~deb12u2         deb   CVE-2026-28389    High        1.0% (60th)    0.8           
+openssl             3.0.11-1~deb12u2         3.0.19-1~deb12u2         deb   CVE-2026-28389    High        1.0% (60th)    0.8           
+libssl3             3.0.11-1~deb12u2         3.0.19-1~deb12u2         deb   CVE-2026-28390    High        1.0% (60th)    0.8           
+openssl             3.0.11-1~deb12u2         3.0.19-1~deb12u2         deb   CVE-2026-28390    High        1.0% (60th)    0.8           
+libssl3             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-34180    High        1.0% (60th)    0.8           
+openssl             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-34180    High        1.0% (60th)    0.8           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u2  deb   CVE-2025-27113    High        1.0% (60th)    0.8           
+libpng16-16         1.6.39-2                 1.6.39-2+deb12u3         deb   CVE-2026-25646    High        1.0% (58th)    0.7           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u7          deb   CVE-2026-33845    Critical    0.8% (53rd)    0.7           
+libtiff6            4.5.0-6+deb12u1          4.5.0-6+deb12u2          deb   CVE-2023-3618     Medium      1.2% (64th)    0.7           
+nginx               1.25.5-1~bookworm        (won't fix)              deb   CVE-2013-0337     Low         2.2% (80th)    0.7           
+libheif1            1.15.1-1                 1.15.1-1+deb12u1         deb   CVE-2023-49462    High        0.8% (53rd)    0.7           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u4          deb   CVE-2024-12243    Medium      1.2% (66th)    0.6           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u3  deb   CVE-2025-49794    Critical    0.7% (49th)    0.6           
+libssl3             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2025-69421    High        0.8% (54th)    0.6           
+openssl             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2025-69421    High        0.8% (54th)    0.6           
+libheif1            1.15.1-1                 1.15.1-1+deb12u1         deb   CVE-2024-41311    High        0.8% (53rd)    0.6           
+libxslt1.1          1.1.35-1                 1.1.35-1+deb12u2         deb   CVE-2023-40403    Medium      1.1% (62nd)    0.6           
+libssl3             3.0.11-1~deb12u2         3.0.19-1~deb12u2         deb   CVE-2026-28387    High        0.8% (53rd)    0.6           
+openssl             3.0.11-1~deb12u2         3.0.19-1~deb12u2         deb   CVE-2026-28387    High        0.8% (53rd)    0.6           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u5          deb   CVE-2025-32989    Medium      1.2% (64th)    0.6           
+libtiff6            4.5.0-6+deb12u1          4.5.0-6+deb12u3          deb   CVE-2025-9900     High        0.7% (51st)    0.6           
+libssh2-1           1.10.0-3+b1                                       deb   CVE-2025-15661    Medium      1.0% (60th)    0.6           
+libssl3             3.0.11-1~deb12u2         3.0.14-1~deb12u1         deb   CVE-2024-4603     Medium      1.1% (63rd)    0.6           
+openssl             3.0.11-1~deb12u2         3.0.14-1~deb12u1         deb   CVE-2024-4603     Medium      1.1% (63rd)    0.6           
+libnghttp2-14       1.52.0-1+deb12u1         1.52.0-1+deb12u3         deb   CVE-2026-27135    High        0.8% (52nd)    0.6           
+libssl3             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2025-69420    High        0.8% (52nd)    0.6           
+openssl             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2025-69420    High        0.8% (52nd)    0.6           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u7          deb   CVE-2026-5260     High        0.7% (50th)    0.6           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-11856    Critical    0.6% (45th)    0.6           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-11856    Critical    0.6% (45th)    0.6           
+libabsl20220623     20220623.1-1             20220623.1-1+deb12u1     deb   CVE-2025-0838     Critical    0.6% (45th)    0.6           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u5          deb   CVE-2025-32990    High        0.7% (50th)    0.6           
+libexpat1           2.5.0-1                  2.5.0-1+deb12u2          deb   CVE-2024-50602    Medium      1.0% (60th)    0.6           
+libgssapi-krb5-2    1.20.1-2+deb12u1         1.20.1-2+deb12u2         deb   CVE-2024-37370    High        0.7% (51st)    0.6           
+libk5crypto3        1.20.1-2+deb12u1         1.20.1-2+deb12u2         deb   CVE-2024-37370    High        0.7% (51st)    0.6           
+libkrb5-3           1.20.1-2+deb12u1         1.20.1-2+deb12u2         deb   CVE-2024-37370    High        0.7% (51st)    0.6           
+libkrb5support0     1.20.1-2+deb12u1         1.20.1-2+deb12u2         deb   CVE-2024-37370    High        0.7% (51st)    0.6           
+nginx               1.25.5-1~bookworm                                 deb   CVE-2026-60005    High        0.7% (50th)    0.6           
+libpng16-16         1.6.39-2                 1.6.39-2+deb12u4         deb   CVE-2026-33636    High        0.7% (51st)    0.6           
+libtinfo6           6.4-4                    (won't fix)              deb   CVE-2023-50495    Medium      1.0% (58th)    0.6           
+ncurses-base        6.4-4                    (won't fix)              deb   CVE-2023-50495    Medium      1.0% (58th)    0.6           
+ncurses-bin         6.4-4                    (won't fix)              deb   CVE-2023-50495    Medium      1.0% (58th)    0.6           
+libtasn1-6          4.19.0-2                 4.19.0-2+deb12u1         deb   CVE-2024-12133    Medium      1.1% (61st)    0.6           
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u6        deb   CVE-2024-2004     Low         1.7% (74th)    0.5           
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u6        deb   CVE-2024-2004     Low         1.7% (74th)    0.5           
+libssl3             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-42766    Medium      1.0% (59th)    0.5           
+openssl             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-42766    Medium      1.0% (59th)    0.5           
+libheif1            1.15.1-1                 1.15.1-1+deb12u1         deb   CVE-2023-29659    Medium      0.9% (57th)    0.5           
+libssh2-1           1.10.0-3+b1                                       deb   CVE-2026-58050    High        0.7% (50th)    0.5           
+liblzma5            5.4.1-0.2                5.4.1-1                  deb   CVE-2025-31115    High        0.6% (47th)    0.5           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-8924     Critical    0.6% (43rd)    0.5           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-8924     Critical    0.6% (43rd)    0.5           
+libssl3             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-7383     High        0.6% (46th)    0.5           
+openssl             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-7383     High        0.6% (46th)    0.5           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-10536    Critical    0.5% (40th)    0.5           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-10536    Critical    0.5% (40th)    0.5           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u2  deb   CVE-2023-45322    Medium      0.8% (54th)    0.5           
+libc-bin            2.36-9+deb12u7           (won't fix)              deb   CVE-2026-5450     Critical    0.5% (40th)    0.5           
+libc6               2.36-9+deb12u7           (won't fix)              deb   CVE-2026-5450     Critical    0.5% (40th)    0.5           
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2026-5773     High        0.6% (46th)    0.5           
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2026-5773     High        0.6% (46th)    0.5           
+libaom3             3.6.0-1                  (won't fix)              deb   CVE-2023-39616    High        0.6% (46th)    0.5           
+libgssapi-krb5-2    1.20.1-2+deb12u1         1.20.1-2+deb12u5         deb   CVE-2026-40355    High        0.6% (46th)    0.5           
+libk5crypto3        1.20.1-2+deb12u1         1.20.1-2+deb12u5         deb   CVE-2026-40355    High        0.6% (46th)    0.5           
+libkrb5-3           1.20.1-2+deb12u1         1.20.1-2+deb12u5         deb   CVE-2026-40355    High        0.6% (46th)    0.5           
+libkrb5support0     1.20.1-2+deb12u1         1.20.1-2+deb12u5         deb   CVE-2026-40355    High        0.6% (46th)    0.5           
+libgssapi-krb5-2    1.20.1-2+deb12u1         1.20.1-2+deb12u5         deb   CVE-2026-40356    High        0.6% (45th)    0.5           
+libk5crypto3        1.20.1-2+deb12u1         1.20.1-2+deb12u5         deb   CVE-2026-40356    High        0.6% (45th)    0.5           
+libkrb5-3           1.20.1-2+deb12u1         1.20.1-2+deb12u5         deb   CVE-2026-40356    High        0.6% (45th)    0.5           
+libkrb5support0     1.20.1-2+deb12u1         1.20.1-2+deb12u5         deb   CVE-2026-40356    High        0.6% (45th)    0.5           
+libssl3             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-45445    High        0.6% (45th)    0.5           
+openssl             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-45445    High        0.6% (45th)    0.5           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u2  deb   CVE-2025-32415    High        0.6% (45th)    0.5           
+libgssapi-krb5-2    1.20.1-2+deb12u1         1.20.1-2+deb12u3         deb   CVE-2025-24528    High        0.6% (45th)    0.4           
+libk5crypto3        1.20.1-2+deb12u1         1.20.1-2+deb12u3         deb   CVE-2025-24528    High        0.6% (45th)    0.4           
+libkrb5-3           1.20.1-2+deb12u1         1.20.1-2+deb12u3         deb   CVE-2025-24528    High        0.6% (45th)    0.4           
+libkrb5support0     1.20.1-2+deb12u1         1.20.1-2+deb12u3         deb   CVE-2025-24528    High        0.6% (45th)    0.4           
+libssl3             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-9076     High        0.6% (45th)    0.4           
+openssl             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-9076     High        0.6% (45th)    0.4           
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u10       deb   CVE-2024-11053    Low         1.4% (69th)    0.4           
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u10       deb   CVE-2024-11053    Low         1.4% (69th)    0.4           
+perl-base           5.36.0-7+deb12u1         5.36.0-7+deb12u2         deb   CVE-2024-56406    High        0.5% (42nd)    0.4           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u6  deb   CVE-2026-0990     Medium      0.8% (52nd)    0.4           
+libtiff6            4.5.0-6+deb12u1          4.5.0-6+deb12u4          deb   CVE-2026-4775     High        0.6% (43rd)    0.4           
+libc-bin            2.36-9+deb12u7           2.36-9+deb12u14          deb   CVE-2026-0915     High        0.6% (43rd)    0.4           
+libc6               2.36-9+deb12u7           2.36-9+deb12u14          deb   CVE-2026-0915     High        0.6% (43rd)    0.4           
+libssh2-1           1.10.0-3+b1              (won't fix)              deb   CVE-2026-7598     Critical    0.5% (38th)    0.4           
+libc-bin            2.36-9+deb12u7           2.36-9+deb12u11          deb   CVE-2025-4802     High        0.6% (43rd)    0.4           
+libc6               2.36-9+deb12u7           2.36-9+deb12u11          deb   CVE-2025-4802     High        0.6% (43rd)    0.4           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u7          deb   CVE-2026-3833     High        0.6% (43rd)    0.4           
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u8        deb   CVE-2024-8096     Medium      0.7% (50th)    0.4           
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u8        deb   CVE-2024-8096     Medium      0.7% (50th)    0.4           
+libheif1            1.15.1-1                                          deb   CVE-2026-32740    High        0.5% (41st)    0.4           
+perl-base           5.36.0-7+deb12u1         (won't fix)              deb   CVE-2026-8376     Critical    0.4% (36th)    0.4           
+libdav1d6           1.0.0-2+deb12u1          (won't fix)              deb   CVE-2023-32570    Medium      0.7% (51st)    0.4           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-8927     Critical    0.4% (36th)    0.4           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-8927     Critical    0.4% (36th)    0.4           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-6253     Medium      0.7% (50th)    0.4           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-6253     Medium      0.7% (50th)    0.4           
+perl-base           5.36.0-7+deb12u1                                  deb   CVE-2026-13221    Critical    0.4% (35th)    0.4           
+perl-base           5.36.0-7+deb12u1         (won't fix)              deb   CVE-2026-42496    Critical    0.4% (35th)    0.4           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u2  deb   CVE-2023-39615    Medium      0.7% (48th)    0.4           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u7          deb   CVE-2026-42015    Medium      0.7% (50th)    0.4           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u3          deb   CVE-2024-28834    Medium      0.7% (50th)    0.4           
+libsystemd0         252.22-1~deb12u1         252.38-1~deb12u1         deb   CVE-2025-4598     Medium      0.7% (51st)    0.4           
+libudev1            252.22-1~deb12u1         252.38-1~deb12u1         deb   CVE-2025-4598     Medium      0.7% (51st)    0.4           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u5          deb   CVE-2025-6395     Medium      0.6% (46th)    0.4           
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2025-14819    Medium      0.7% (49th)    0.4           
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2025-14819    Medium      0.7% (49th)    0.4           
+nginx               1.25.5-1~bookworm                                 deb   CVE-2026-56434    High        0.4% (37th)    0.4           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u7          deb   CVE-2026-42011    High        0.5% (38th)    0.4           
+libldap-2.5-0       2.5.13+dfsg-5                                     deb   CVE-2017-17740    Negligible  7.0% (93rd)    0.4           
+libssh2-1           1.10.0-3+b1                                       deb   CVE-2026-58051    High        0.4% (36th)    0.3           
+libtinfo6           6.4-4                    (won't fix)              deb   CVE-2025-69720    High        0.4% (36th)    0.3           
+ncurses-base        6.4-4                    (won't fix)              deb   CVE-2025-69720    High        0.4% (36th)    0.3           
+ncurses-bin         6.4-4                    (won't fix)              deb   CVE-2025-69720    High        0.4% (36th)    0.3           
+perl-base           5.36.0-7+deb12u1                                  deb   CVE-2026-12087    Critical    0.4% (30th)    0.3           
+perl-base           5.36.0-7+deb12u1         (won't fix)              deb   CVE-2026-9538     High        0.4% (36th)    0.3           
+libheif1            1.15.1-1                                          deb   CVE-2026-47247    High        0.4% (36th)    0.3           
+perl-base           5.36.0-7+deb12u1                                  deb   CVE-2026-57433    Critical    0.4% (28th)    0.3           
+libxml2             2.9.14+dfsg-1.3~deb12u1  (won't fix)              deb   CVE-2026-6653     Critical    0.4% (28th)    0.3           
+libexpat1           2.5.0-1                                           deb   CVE-2026-45186    High        0.4% (36th)    0.3           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u7          deb   CVE-2026-42013    High        0.4% (34th)    0.3           
+libssl3             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2025-69419    High        0.4% (36th)    0.3           
+openssl             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2025-69419    High        0.4% (36th)    0.3           
+libaom3             3.6.0-1                                           deb   CVE-2026-56211    High        0.5% (37th)    0.3           
+libc-bin            2.36-9+deb12u7           2.36-9+deb12u14          deb   CVE-2025-15281    High        0.4% (36th)    0.3           
+libc6               2.36-9+deb12u7           2.36-9+deb12u14          deb   CVE-2025-15281    High        0.4% (36th)    0.3           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u6          deb   CVE-2025-14831    Medium      0.6% (47th)    0.3           
+libpam-modules      1.5.2-6+deb12u1          1.5.2-6+deb12u2          deb   CVE-2025-6020     High        0.4% (35th)    0.3           
+libpam-modules-bin  1.5.2-6+deb12u1          1.5.2-6+deb12u2          deb   CVE-2025-6020     High        0.4% (35th)    0.3           
+libpam-runtime      1.5.2-6+deb12u1          1.5.2-6+deb12u2          deb   CVE-2025-6020     High        0.4% (35th)    0.3           
+libpam0g            1.5.2-6+deb12u1          1.5.2-6+deb12u2          deb   CVE-2025-6020     High        0.4% (35th)    0.3           
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2025-14524    Medium      0.6% (46th)    0.3           
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2025-14524    Medium      0.6% (46th)    0.3           
+libssl3             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-34182    Critical    0.4% (27th)    0.3           
+openssl             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-34182    Critical    0.4% (27th)    0.3           
+dpkg                1.21.22                  1.21.23                  deb   CVE-2026-2219     High        0.4% (34th)    0.3           
+perl-base           5.36.0-7+deb12u1         (won't fix)              deb   CVE-2026-42497    High        0.4% (34th)    0.3           
+libssl3             3.0.11-1~deb12u2         (won't fix)              deb   CVE-2026-42767    Medium      0.6% (43rd)    0.3           
+openssl             3.0.11-1~deb12u2         (won't fix)              deb   CVE-2026-42767    Medium      0.6% (43rd)    0.3           
+libavif15           0.11.1-1                 0.11.1-1+deb12u1         deb   CVE-2025-48174    Critical    0.3% (25th)    0.3           
+libexpat1           2.5.0-1                  (won't fix)              deb   CVE-2026-41080    High        0.4% (32nd)    0.3           
+libpng16-16         1.6.39-2                 1.6.39-2+deb12u1         deb   CVE-2025-64720    High        0.4% (33rd)    0.3           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-8932     High        0.4% (32nd)    0.3           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-8932     High        0.4% (32nd)    0.3           
+libc-bin            2.36-9+deb12u7                                    deb   CVE-2018-20796    Negligible  5.8% (92nd)    0.3           
+libc6               2.36-9+deb12u7                                    deb   CVE-2018-20796    Negligible  5.8% (92nd)    0.3           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u2  deb   CVE-2025-24928    High        0.4% (30th)    0.3           
+libc-bin            2.36-9+deb12u7           2.36-9+deb12u14          deb   CVE-2026-4046     High        0.4% (31st)    0.3           
+libc6               2.36-9+deb12u7           2.36-9+deb12u14          deb   CVE-2026-4046     High        0.4% (31st)    0.3           
+libc-bin            2.36-9+deb12u7           2.36-9+deb12u14          deb   CVE-2026-0861     High        0.4% (28th)    0.3           
+libc6               2.36-9+deb12u7           2.36-9+deb12u14          deb   CVE-2026-0861     High        0.4% (28th)    0.3           
+perl-base           5.36.0-7+deb12u1                                  deb   CVE-2026-48959    High        0.4% (30th)    0.3           
+dpkg                1.21.22                  1.21.23                  deb   CVE-2025-6297     High        0.4% (28th)    0.3           
+libc-bin            2.36-9+deb12u7           (won't fix)              deb   CVE-2026-5928     High        0.4% (29th)    0.3           
+libc6               2.36-9+deb12u7           (won't fix)              deb   CVE-2026-5928     High        0.4% (29th)    0.3           
+libssl3             3.0.11-1~deb12u2         3.0.16-1~deb12u1         deb   CVE-2024-13176    Medium      0.6% (45th)    0.3           
+openssl             3.0.11-1~deb12u2         3.0.16-1~deb12u1         deb   CVE-2024-13176    Medium      0.6% (45th)    0.3           
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2017-16232    Negligible  5.4% (91st)    0.3           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-6429     Medium      0.5% (41st)    0.3           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-6429     Medium      0.5% (41st)    0.3           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u2  deb   CVE-2025-32414    High        0.4% (28th)    0.3           
+libxslt1.1          1.1.35-1                 1.1.35-1+deb12u1         deb   CVE-2024-55549    High        0.3% (27th)    0.3           
+libxslt1.1          1.1.35-1                 1.1.35-1+deb12u1         deb   CVE-2025-24855    High        0.3% (27th)    0.3           
+libldap-2.5-0       2.5.13+dfsg-5                                     deb   CVE-2015-3276     Negligible  5.3% (91st)    0.3           
+libde265-0          1.0.11-1+deb12u2                                  deb   CVE-2026-33164    High        0.3% (27th)    0.3           
+libssl3             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2026-22796    Medium      0.5% (40th)    0.3           
+openssl             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2026-22796    Medium      0.5% (40th)    0.3           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u7          deb   CVE-2026-42012    High        0.4% (28th)    0.3           
+libde265-0          1.0.11-1+deb12u2         (won't fix)              deb   CVE-2024-38950    Medium      0.4% (37th)    0.3           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-12064    High        0.3% (26th)    0.3           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-12064    High        0.3% (26th)    0.3           
+libpng16-16         1.6.39-2                 1.6.39-2+deb12u1         deb   CVE-2025-66293    High        0.3% (27th)    0.3           
+libaom3             3.6.0-1                                           deb   CVE-2026-56208    High        0.3% (25th)    0.3           
+libde265-0          1.0.11-1+deb12u2         (won't fix)              deb   CVE-2024-38949    Medium      0.4% (36th)    0.3           
+gzip                1.12-1                   (won't fix)              deb   CVE-2026-41992    High        0.3% (26th)    0.3           
+libheif1            1.15.1-1                                          deb   CVE-2026-32741    High        0.3% (27th)    0.3           
+libc-bin            2.36-9+deb12u7           2.36-9+deb12u14          deb   CVE-2026-4437     High        0.3% (25th)    0.2           
+libc6               2.36-9+deb12u7           2.36-9+deb12u14          deb   CVE-2026-4437     High        0.3% (25th)    0.2           
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2026-7168     Medium      0.5% (38th)    0.2           
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2026-7168     Medium      0.5% (38th)    0.2           
+libtiff6            4.5.0-6+deb12u1          4.5.0-6+deb12u2          deb   CVE-2023-2908     Medium      0.5% (37th)    0.2           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-8286     High        0.3% (23rd)    0.2           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-8286     High        0.3% (23rd)    0.2           
+libpam-modules      1.5.2-6+deb12u1          1.5.2-6+deb12u2          deb   CVE-2024-22365    Medium      0.5% (37th)    0.2           
+libpam-modules-bin  1.5.2-6+deb12u1          1.5.2-6+deb12u2          deb   CVE-2024-22365    Medium      0.5% (37th)    0.2           
+libpam-runtime      1.5.2-6+deb12u1          1.5.2-6+deb12u2          deb   CVE-2024-22365    Medium      0.5% (37th)    0.2           
+libpam0g            1.5.2-6+deb12u1          1.5.2-6+deb12u2          deb   CVE-2024-22365    Medium      0.5% (37th)    0.2           
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2025-10148    Medium      0.5% (38th)    0.2           
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2025-10148    Medium      0.5% (38th)    0.2           
+libaom3             3.6.0-1                                           deb   CVE-2026-56209    High        0.3% (25th)    0.2           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-5545     Medium      0.4% (34th)    0.2           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-5545     Medium      0.4% (34th)    0.2           
+libheif1            1.15.1-1                                          deb   CVE-2026-32882    High        0.3% (24th)    0.2           
+libheif1            1.15.1-1                                          deb   CVE-2026-41071    High        0.3% (22nd)    0.2           
+liblzma5            5.4.1-0.2                5.4.1-1+deb12u1          deb   CVE-2026-34743    Medium      0.4% (37th)    0.2           
+libgssapi-krb5-2    1.20.1-2+deb12u1         1.20.1-2+deb12u3         deb   CVE-2024-26462    Medium      0.4% (36th)    0.2           
+libk5crypto3        1.20.1-2+deb12u1         1.20.1-2+deb12u3         deb   CVE-2024-26462    Medium      0.4% (36th)    0.2           
+libkrb5-3           1.20.1-2+deb12u1         1.20.1-2+deb12u3         deb   CVE-2024-26462    Medium      0.4% (36th)    0.2           
+libkrb5support0     1.20.1-2+deb12u1         1.20.1-2+deb12u3         deb   CVE-2024-26462    Medium      0.4% (36th)    0.2           
+libssl3             3.0.11-1~deb12u2         3.0.19-1~deb12u2         deb   CVE-2026-31789    Critical    0.2% (15th)    0.2           
+openssl             3.0.11-1~deb12u2         3.0.19-1~deb12u2         deb   CVE-2026-31789    Critical    0.2% (15th)    0.2           
+libicu72            72.1-3                   72.1-3+deb12u1           deb   CVE-2025-5222     High        0.3% (23rd)    0.2           
+bsdutils            1:2.38.1-5+deb12u1       (won't fix)              deb   CVE-2026-3184     Medium      0.4% (36th)    0.2           
+libblkid1           2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-3184     Medium      0.4% (36th)    0.2           
+libmount1           2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-3184     Medium      0.4% (36th)    0.2           
+libsmartcols1       2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-3184     Medium      0.4% (36th)    0.2           
+libuuid1            2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-3184     Medium      0.4% (36th)    0.2           
+mount               2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-3184     Medium      0.4% (36th)    0.2           
+util-linux          2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-3184     Medium      0.4% (36th)    0.2           
+util-linux-extra    2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-3184     Medium      0.4% (36th)    0.2           
+libssh2-1           1.10.0-3+b1                                       deb   CVE-2026-66032    High        0.3% (19th)    0.2           
+perl-base           5.36.0-7+deb12u1                                  deb   CVE-2026-48962    High        0.3% (21st)    0.2           
+libheif1            1.15.1-1                                          deb   CVE-2026-48029    High        0.3% (22nd)    0.2           
+libtiff6            4.5.0-6+deb12u1          4.5.0-6+deb12u2          deb   CVE-2023-26966    Medium      0.4% (34th)    0.2           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-6276     High        0.3% (21st)    0.2           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-6276     High        0.3% (21st)    0.2           
+libtiff6            4.5.0-6+deb12u1          4.5.0-6+deb12u2          deb   CVE-2023-25433    Medium      0.4% (34th)    0.2           
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u11       deb   CVE-2025-0167     Low         0.7% (48th)    0.2           
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u11       deb   CVE-2025-0167     Low         0.7% (48th)    0.2           
+libaom3             3.6.0-1                                           deb   CVE-2026-56210    High        0.3% (21st)    0.2           
+libheif1            1.15.1-1                 (won't fix)              deb   CVE-2025-68431    High        0.3% (21st)    0.2           
+libc-bin            2.36-9+deb12u7           (won't fix)              deb   CVE-2026-6238     Medium      0.4% (28th)    0.2           
+libc6               2.36-9+deb12u7           (won't fix)              deb   CVE-2026-6238     Medium      0.4% (28th)    0.2           
+perl-base           5.36.0-7+deb12u1         5.36.0-7+deb12u3         deb   CVE-2025-40909    Medium      0.4% (30th)    0.2           
+tar                 1.34+dfsg-1.2+deb12u1                             deb   CVE-2005-2541     Negligible  4.0% (89th)    0.2           
+libpam-modules      1.5.2-6+deb12u1          (won't fix)              deb   CVE-2026-54411    Medium      0.3% (25th)    0.2           
+libpam-modules-bin  1.5.2-6+deb12u1          (won't fix)              deb   CVE-2026-54411    Medium      0.3% (25th)    0.2           
+libpam-runtime      1.5.2-6+deb12u1          (won't fix)              deb   CVE-2026-54411    Medium      0.3% (25th)    0.2           
+libpam0g            1.5.2-6+deb12u1          (won't fix)              deb   CVE-2026-54411    Medium      0.3% (25th)    0.2           
+libtiff6            4.5.0-6+deb12u1          4.5.0-6+deb12u2          deb   CVE-2023-26965    Medium      0.4% (30th)    0.2           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u2  deb   CVE-2022-49043    High        0.3% (17th)    0.2           
+libc-bin            2.36-9+deb12u7           2.36-9+deb12u10          deb   CVE-2025-0395     Medium      0.3% (27th)    0.2           
+libc6               2.36-9+deb12u7           2.36-9+deb12u10          deb   CVE-2025-0395     Medium      0.3% (27th)    0.2           
+tar                 1.34+dfsg-1.2+deb12u1    (won't fix)              deb   CVE-2026-5704     Medium      0.4% (30th)    0.2           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u3          deb   CVE-2024-28835    Medium      0.4% (31st)    0.2           
+libssh2-1           1.10.0-3+b1                                       deb   CVE-2026-66034    High        0.3% (16th)    0.2           
+perl-base           5.36.0-7+deb12u1                                  deb   CVE-2026-7017     High        0.3% (17th)    0.2           
+libpng16-16         1.6.39-2                 1.6.39-2+deb12u1         deb   CVE-2025-65018    High        0.3% (16th)    0.2           
+libheif1            1.15.1-1                                          deb   CVE-2026-32739    Medium      0.3% (24th)    0.2           
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2026-12912    High        0.2% (16th)    0.2           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-8458     Medium      0.3% (23rd)    0.2           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-8458     Medium      0.3% (23rd)    0.2           
+libgssapi-krb5-2    1.20.1-2+deb12u1         1.20.1-2+deb12u4         deb   CVE-2025-3576     Medium      0.3% (25th)    0.2           
+libk5crypto3        1.20.1-2+deb12u1         1.20.1-2+deb12u4         deb   CVE-2025-3576     Medium      0.3% (25th)    0.2           
+libkrb5-3           1.20.1-2+deb12u1         1.20.1-2+deb12u4         deb   CVE-2025-3576     Medium      0.3% (25th)    0.2           
+libkrb5support0     1.20.1-2+deb12u1         1.20.1-2+deb12u4         deb   CVE-2025-3576     Medium      0.3% (25th)    0.2           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-4873     Medium      0.3% (25th)    0.2           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-4873     Medium      0.3% (25th)    0.2           
+libheif1            1.15.1-1                                          deb   CVE-2026-32814    Medium      0.3% (23rd)    0.2           
+libssl3             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-45446    Medium      0.4% (29th)    0.2           
+openssl             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-45446    Medium      0.4% (29th)    0.2           
+libc-bin            2.36-9+deb12u7           (won't fix)              deb   CVE-2026-5435     High        0.2% (14th)    0.2           
+libc6               2.36-9+deb12u7           (won't fix)              deb   CVE-2026-5435     High        0.2% (14th)    0.2           
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2026-3784     Medium      0.3% (22nd)    0.2           
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2026-3784     Medium      0.3% (22nd)    0.2           
+libheif1            1.15.1-1                                          deb   CVE-2026-32738    Medium      0.3% (22nd)    0.2           
+curl                7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2026-3783     Medium      0.3% (25th)    0.2           
+libcurl4            7.88.1-10+deb12u5        7.88.1-10+deb12u15       deb   CVE-2026-3783     Medium      0.3% (25th)    0.2           
+libavif15           0.11.1-1                 0.11.1-1+deb12u1         deb   CVE-2025-48175    Medium      0.3% (22nd)    0.2           
+perl-base           5.36.0-7+deb12u1                                  deb   CVE-2026-57432    High        0.2% (11th)    0.2           
+libde265-0          1.0.11-1+deb12u2                                  deb   CVE-2026-49295    High        0.2% (13th)    0.2           
+libde265-0          1.0.11-1+deb12u2                                  deb   CVE-2026-49346    High        0.2% (13th)    0.2           
+libc-bin            2.36-9+deb12u7           2.36-9+deb12u14          deb   CVE-2026-4438     Medium      0.3% (24th)    0.2           
+libc6               2.36-9+deb12u7           2.36-9+deb12u14          deb   CVE-2026-4438     Medium      0.3% (24th)    0.2           
+libc-bin            2.36-9+deb12u7                                    deb   CVE-2019-1010022  Negligible  3.2% (87th)    0.2           
+libc6               2.36-9+deb12u7                                    deb   CVE-2019-1010022  Negligible  3.2% (87th)    0.2           
+libc-bin            2.36-9+deb12u7                                    deb   CVE-2019-1010024  Negligible  3.2% (86th)    0.2           
+libc6               2.36-9+deb12u7                                    deb   CVE-2019-1010024  Negligible  3.2% (86th)    0.2           
+libexpat1           2.5.0-1                                           deb   CVE-2026-50219    Medium      0.3% (21st)    0.2           
+libde265-0          1.0.11-1+deb12u2                                  deb   CVE-2026-45383    Medium      0.3% (17th)    0.2           
+libssl3             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-42770    Low         0.5% (37th)    0.2           
+openssl             3.0.11-1~deb12u2         3.0.20-1~deb12u2         deb   CVE-2026-42770    Low         0.5% (37th)    0.2           
+libheif1            1.15.1-1                                          deb   CVE-2026-47178    High        0.2% (9th)     0.2           
+libc-bin            2.36-9+deb12u7                                    deb   CVE-2019-1010023  Negligible  3.0% (86th)    0.2           
+libc6               2.36-9+deb12u7                                    deb   CVE-2019-1010023  Negligible  3.0% (86th)    0.2           
+libde265-0          1.0.11-1+deb12u2                                  deb   CVE-2026-45382    Medium      0.3% (16th)    0.2           
+libcap2             1:2.66-4                 1:2.66-4+deb12u3         deb   CVE-2026-4878     High        0.2% (10th)    0.1           
+curl                7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-1965     Medium      0.3% (17th)    0.1           
+libcurl4            7.88.1-10+deb12u5        (won't fix)              deb   CVE-2026-1965     Medium      0.3% (17th)    0.1           
+libnghttp2-14       1.52.0-1+deb12u1         (won't fix)              deb   CVE-2026-58055    Medium      0.3% (18th)    0.1           
+libjbig0            2.1-6.1                                           deb   CVE-2017-9937     Negligible  3.0% (85th)    0.1           
+libexpat1           2.5.0-1                  (won't fix)              deb   CVE-2026-25210    High        0.2% (9th)     0.1           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u6  deb   CVE-2026-0989     Low         0.4% (36th)    0.1           
+libheif1            1.15.1-1                                          deb   CVE-2026-41069    Medium      0.3% (16th)    0.1           
+login               1:4.13+dfsg1-1+b1        1:4.13+dfsg1-1+deb12u1   deb   CVE-2023-4641     Medium      0.3% (17th)    0.1           
+passwd              1:4.13+dfsg1-1+b1        1:4.13+dfsg1-1+deb12u1   deb   CVE-2023-4641     Medium      0.3% (17th)    0.1           
+login               1:4.13+dfsg1-1+b1        1:4.13+dfsg1-1+deb12u1   deb   CVE-2023-29383    Low         0.4% (35th)    0.1           
+passwd              1:4.13+dfsg1-1+b1        1:4.13+dfsg1-1+deb12u1   deb   CVE-2023-29383    Low         0.4% (35th)    0.1           
+login               1:4.13+dfsg1-1+b1        (won't fix)              deb   CVE-2024-56433    Low         0.4% (33rd)    0.1           
+passwd              1:4.13+dfsg1-1+b1        (won't fix)              deb   CVE-2024-56433    Low         0.4% (33rd)    0.1           
+libc-bin            2.36-9+deb12u7                                    deb   CVE-2010-4756     Negligible  2.6% (83rd)    0.1           
+libc6               2.36-9+deb12u7                                    deb   CVE-2010-4756     Negligible  2.6% (83rd)    0.1           
+perl-base           5.36.0-7+deb12u1                                  deb   CVE-2026-7010     Medium      0.2% (13th)    0.1           
+libpam-modules      1.5.2-6+deb12u1          (won't fix)              deb   CVE-2024-10041    Medium      0.3% (18th)    0.1           
+libpam-modules-bin  1.5.2-6+deb12u1          (won't fix)              deb   CVE-2024-10041    Medium      0.3% (18th)    0.1           
+libpam-runtime      1.5.2-6+deb12u1          (won't fix)              deb   CVE-2024-10041    Medium      0.3% (18th)    0.1           
+libpam0g            1.5.2-6+deb12u1          (won't fix)              deb   CVE-2024-10041    Medium      0.3% (18th)    0.1           
+libpng16-16         1.6.39-2                 1.6.39-2+deb12u2         deb   CVE-2026-22695    High        0.2% (7th)     0.1           
+coreutils           9.1-1                    (won't fix)              deb   CVE-2016-2781     Low         0.4% (35th)    0.1           
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u7          deb   CVE-2026-5419     Low         0.4% (30th)    0.1           
+libldap-2.5-0       2.5.13+dfsg-5                                     deb   CVE-2020-15719    Negligible  2.5% (83rd)    0.1           
+libc-bin            2.36-9+deb12u7                                    deb   CVE-2019-9192     Negligible  2.4% (82nd)    0.1           
+libc6               2.36-9+deb12u7                                    deb   CVE-2019-9192     Negligible  2.4% (82nd)    0.1           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u6  deb   CVE-2026-0992     Low         0.4% (33rd)    0.1           
+libc-bin            2.36-9+deb12u7                                    deb   CVE-2026-6791     Medium      0.2% (11th)    0.1           
+libc6               2.36-9+deb12u7                                    deb   CVE-2026-6791     Medium      0.2% (11th)    0.1           
+libxslt1.1          1.1.35-1                                          deb   CVE-2015-9019     Negligible  2.4% (82nd)    0.1           
+libde265-0          1.0.11-1+deb12u2                                  deb   CVE-2026-33165    Medium      0.2% (14th)    0.1           
+zlib1g              1:1.2.13.dfsg-1          (won't fix)              deb   CVE-2026-27171    Medium      0.2% (12th)    0.1           
+libheif1            1.15.1-1                                          deb   CVE-2026-49271    Medium      0.2% (9th)     0.1           
+libexpat1           2.5.0-1                  (won't fix)              deb   CVE-2026-32777    Medium      0.2% (12th)    0.1           
+libc-bin            2.36-9+deb12u7                                    deb   CVE-2019-1010025  Negligible  2.3% (81st)    0.1           
+libc6               2.36-9+deb12u7                                    deb   CVE-2019-1010025  Negligible  2.3% (81st)    0.1           
+libacl1             2.3.1-3                  (won't fix)              deb   CVE-2026-54369    High        0.2% (4th)     0.1           
+libheif1            1.15.1-1                                          deb   CVE-2026-47709    Medium      0.2% (11th)    0.1           
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u6  deb   CVE-2026-1757     Medium      0.2% (9th)     0.1           
+libexpat1           2.5.0-1                  (won't fix)              deb   CVE-2025-66382    Medium      0.2% (10th)    0.1           
+libgcrypt20         1.10.1-3                 1.10.1-3+deb12u1         deb   CVE-2026-41989    Medium      0.2% (8th)     0.1           
+libheif1            1.15.1-1                                          deb   CVE-2026-47254    Medium      0.2% (8th)     0.1           
+libpng16-16         1.6.39-2                 1.6.39-2+deb12u1         deb   CVE-2025-64505    Medium      0.2% (8th)     0.1           
+libgssapi-krb5-2    1.20.1-2+deb12u1                                  deb   CVE-2018-5709     Negligible  2.1% (79th)    0.1           
+libk5crypto3        1.20.1-2+deb12u1                                  deb   CVE-2018-5709     Negligible  2.1% (79th)    0.1           
+libkrb5-3           1.20.1-2+deb12u1                                  deb   CVE-2018-5709     Negligible  2.1% (79th)    0.1           
+libkrb5support0     1.20.1-2+deb12u1                                  deb   CVE-2018-5709     Negligible  2.1% (79th)    0.1           
+libexpat1           2.5.0-1                                           deb   CVE-2024-28757    Negligible  2.0% (78th)    0.1           
+perl-base           5.36.0-7+deb12u1                                  deb   CVE-2026-15534    Unknown     0.2% (9th)     < 0.1         
+gpgv                2.2.40-1.1               2.2.40-1.1+deb12u2       deb   CVE-2025-68973    High        0.1% (3rd)     < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2018-10126    Negligible  1.9% (77th)    < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2022-1210     Negligible  1.9% (77th)    < 0.1         
+libpng16-16         1.6.39-2                 1.6.39-2+deb12u5         deb   CVE-2026-34757    Medium      0.2% (9th)     < 0.1         
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u6          deb   CVE-2025-9820     Medium      0.2% (10th)    < 0.1         
+libde265-0          1.0.11-1+deb12u2                                  deb   CVE-2026-49337    Medium      0.2% (9th)     < 0.1         
+libexpat1           2.5.0-1                  (won't fix)              deb   CVE-2026-32778    Medium      0.2% (6th)     < 0.1         
+gpgv                2.2.40-1.1               (won't fix)              deb   CVE-2025-30258    Medium      0.2% (8th)     < 0.1         
+libpng16-16         1.6.39-2                 1.6.39-2+deb12u2         deb   CVE-2026-22801    High        0.1% (1st)     < 0.1         
+libgcrypt20         1.10.1-3                                          deb   CVE-2018-6829     Negligible  1.8% (75th)    < 0.1         
+perl-base           5.36.0-7+deb12u1                                  deb   CVE-2023-31486    Negligible  1.7% (75th)    < 0.1         
+libgnutls30         3.7.9-2+deb12u2          3.7.9-2+deb12u7          deb   CVE-2026-42014    Medium      0.1% (4th)     < 0.1         
+libcap2             1:2.66-4                 1:2.66-4+deb12u1         deb   CVE-2025-1390     Medium      0.2% (5th)     < 0.1         
+libc-bin            2.36-9+deb12u7           2.36-9+deb12u13          deb   CVE-2025-8058     Medium      0.2% (5th)     < 0.1         
+libc6               2.36-9+deb12u7           2.36-9+deb12u13          deb   CVE-2025-8058     Medium      0.2% (5th)     < 0.1         
+libexpat1           2.5.0-1                  (won't fix)              deb   CVE-2026-32776    Medium      0.2% (6th)     < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2026-72522    Medium      0.2% (4th)     < 0.1         
+curl                7.88.1-10+deb12u5                                 deb   CVE-2024-2379     Negligible  1.7% (75th)    < 0.1         
+libcurl4            7.88.1-10+deb12u5                                 deb   CVE-2024-2379     Negligible  1.7% (75th)    < 0.1         
+libxslt1.1          1.1.35-1                 (won't fix)              deb   CVE-2025-10911    Medium      0.2% (5th)     < 0.1         
+libsystemd0         252.22-1~deb12u1         252.39-1~deb12u2         deb   CVE-2026-4105     Medium      0.1% (3rd)     < 0.1         
+libudev1            252.22-1~deb12u1         252.39-1~deb12u2         deb   CVE-2026-4105     Medium      0.1% (3rd)     < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2026-56410    Medium      0.1% (3rd)     < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2026-56411    Medium      0.1% (3rd)     < 0.1         
+libsystemd0         252.22-1~deb12u1         252.39-1~deb12u2         deb   CVE-2026-40225    Medium      0.1% (4th)     < 0.1         
+libudev1            252.22-1~deb12u1         252.39-1~deb12u2         deb   CVE-2026-40225    Medium      0.1% (4th)     < 0.1         
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u5  deb   CVE-2025-9714     Medium      0.2% (5th)     < 0.1         
+libtinfo6           6.4-4                    (won't fix)              deb   CVE-2025-6141     Medium      0.2% (6th)     < 0.1         
+ncurses-base        6.4-4                    (won't fix)              deb   CVE-2025-6141     Medium      0.2% (6th)     < 0.1         
+ncurses-bin         6.4-4                    (won't fix)              deb   CVE-2025-6141     Medium      0.2% (6th)     < 0.1         
+libxslt1.1          1.1.35-1                 (won't fix)              deb   CVE-2025-11731    Low         0.3% (18th)    < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2026-56406    Medium      0.1% (3rd)     < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2026-56409    Medium      0.1% (3rd)     < 0.1         
+libp11-kit0         0.24.1-2                 (won't fix)              deb   CVE-2026-13757    Medium      0.1% (3rd)     < 0.1         
+libpng16-16         1.6.39-2                 1.6.39-2+deb12u1         deb   CVE-2025-64506    Medium      0.1% (3rd)     < 0.1         
+libssl3             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2026-22795    Medium      0.1% (4th)     < 0.1         
+openssl             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2026-22795    Medium      0.1% (4th)     < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2026-56412    Medium      0.1% (3rd)     < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2026-56408    Medium      0.1% (2nd)     < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2026-56403    Medium      0.1% (2nd)     < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2026-56404    Medium      0.1% (2nd)     < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2026-56405    Medium      0.1% (2nd)     < 0.1         
+libattr1            1:2.5.1-4                (won't fix)              deb   CVE-2026-54371    Medium      0.1% (3rd)     < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2026-56407    Medium      0.1% (2nd)     < 0.1         
+libssl3             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2025-68160    Medium      0.2% (4th)     < 0.1         
+openssl             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2025-68160    Medium      0.2% (4th)     < 0.1         
+libde265-0          1.0.11-1+deb12u2         (won't fix)              deb   CVE-2023-51792    Low         0.2% (14th)    < 0.1         
+libxpm4             1:3.5.12-1.1+deb12u1     (won't fix)              deb   CVE-2026-4367     Medium      0.1% (2nd)     < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2026-56131    Medium      0.1% (3rd)     < 0.1         
+perl-base           5.36.0-7+deb12u1                                  deb   CVE-2025-15649    Medium      0.1% (2nd)     < 0.1         
+libacl1             2.3.1-3                  (won't fix)              deb   CVE-2026-54370    High        < 0.1% (0th)   < 0.1         
+tar                 1.34+dfsg-1.2+deb12u1                             deb   CVE-2026-18508    Medium      0.1% (3rd)     < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2026-56132    Medium      0.1% (1st)     < 0.1         
+libsystemd0         252.22-1~deb12u1         252.39-1~deb12u2         deb   CVE-2026-29111    Medium      0.1% (2nd)     < 0.1         
+libudev1            252.22-1~deb12u1         252.39-1~deb12u2         deb   CVE-2026-29111    Medium      0.1% (2nd)     < 0.1         
+curl                7.88.1-10+deb12u5                                 deb   CVE-2025-0725     Negligible  1.2% (66th)    < 0.1         
+libcurl4            7.88.1-10+deb12u5                                 deb   CVE-2025-0725     Negligible  1.2% (66th)    < 0.1         
+libbz2-1.0          1.0.8-5+b1               (won't fix)              deb   CVE-2026-42250    Medium      0.1% (2nd)     < 0.1         
+libp11-kit0         0.24.1-2                                          deb   CVE-2026-18938    Medium      0.1% (1st)     < 0.1         
+apt                 2.6.1                                             deb   CVE-2011-3374     Negligible  1.2% (65th)    < 0.1         
+libapt-pkg6.0       2.6.1                                             deb   CVE-2011-3374     Negligible  1.2% (65th)    < 0.1         
+libheif1            1.15.1-1                                          deb   CVE-2026-47714    Medium      0.1% (1st)     < 0.1         
+bsdutils            1:2.38.1-5+deb12u1       (won't fix)              deb   CVE-2026-27456    Medium      0.1% (1st)     < 0.1         
+libblkid1           2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-27456    Medium      0.1% (1st)     < 0.1         
+libmount1           2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-27456    Medium      0.1% (1st)     < 0.1         
+libsmartcols1       2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-27456    Medium      0.1% (1st)     < 0.1         
+libuuid1            2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-27456    Medium      0.1% (1st)     < 0.1         
+mount               2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-27456    Medium      0.1% (1st)     < 0.1         
+util-linux          2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-27456    Medium      0.1% (1st)     < 0.1         
+util-linux-extra    2.38.1-5+deb12u1         (won't fix)              deb   CVE-2026-27456    Medium      0.1% (1st)     < 0.1         
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u3  deb   CVE-2025-6170     Low         0.2% (10th)    < 0.1         
+gzip                1.12-1                   (won't fix)              deb   CVE-2026-41991    Medium      0.1% (1st)     < 0.1         
+bsdutils            1:2.38.1-5+deb12u1                                deb   CVE-2026-13595    Medium      0.1% (1st)     < 0.1         
+libblkid1           2.38.1-5+deb12u1                                  deb   CVE-2026-13595    Medium      0.1% (1st)     < 0.1         
+libmount1           2.38.1-5+deb12u1                                  deb   CVE-2026-13595    Medium      0.1% (1st)     < 0.1         
+libsmartcols1       2.38.1-5+deb12u1                                  deb   CVE-2026-13595    Medium      0.1% (1st)     < 0.1         
+libuuid1            2.38.1-5+deb12u1                                  deb   CVE-2026-13595    Medium      0.1% (1st)     < 0.1         
+mount               2.38.1-5+deb12u1                                  deb   CVE-2026-13595    Medium      0.1% (1st)     < 0.1         
+util-linux          2.38.1-5+deb12u1                                  deb   CVE-2026-13595    Medium      0.1% (1st)     < 0.1         
+util-linux-extra    2.38.1-5+deb12u1                                  deb   CVE-2026-13595    Medium      0.1% (1st)     < 0.1         
+libgssapi-krb5-2    1.20.1-2+deb12u1                                  deb   CVE-2024-26461    Negligible  1.1% (63rd)    < 0.1         
+libk5crypto3        1.20.1-2+deb12u1                                  deb   CVE-2024-26461    Negligible  1.1% (63rd)    < 0.1         
+libkrb5-3           1.20.1-2+deb12u1                                  deb   CVE-2024-26461    Negligible  1.1% (63rd)    < 0.1         
+libkrb5support0     1.20.1-2+deb12u1                                  deb   CVE-2024-26461    Negligible  1.1% (63rd)    < 0.1         
+libgcrypt20         1.10.1-3                                          deb   CVE-2024-2236     Negligible  1.1% (62nd)    < 0.1         
+libsystemd0         252.22-1~deb12u1         (won't fix)              deb   CVE-2026-40228    Low         0.2% (6th)     < 0.1         
+libudev1            252.22-1~deb12u1         (won't fix)              deb   CVE-2026-40228    Low         0.2% (6th)     < 0.1         
+libssl3             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2025-69418    Medium      0.1% (1st)     < 0.1         
+openssl             3.0.11-1~deb12u2         3.0.18-1~deb12u2         deb   CVE-2025-69418    Medium      0.1% (1st)     < 0.1         
+gpgv                2.2.40-1.1               (won't fix)              deb   CVE-2025-68972    Medium      0.1% (1st)     < 0.1         
+libxml2             2.9.14+dfsg-1.3~deb12u1  2.9.14+dfsg-1.3~deb12u6  deb   CVE-2025-8732     Low         0.2% (10th)    < 0.1         
+tar                 1.34+dfsg-1.2+deb12u1                             deb   CVE-2026-18477    Medium      0.1% (1st)     < 0.1         
+login               1:4.13+dfsg1-1+b1                                 deb   CVE-2007-5686     Negligible  0.9% (57th)    < 0.1         
+passwd              1:4.13+dfsg1-1+b1                                 deb   CVE-2007-5686     Negligible  0.9% (57th)    < 0.1         
+libtiff6            4.5.0-6+deb12u1          (won't fix)              deb   CVE-2024-13978    Low         0.2% (8th)     < 0.1         
+libexpat1           2.5.0-1                  (won't fix)              deb   CVE-2026-24515    Low         0.2% (6th)     < 0.1         
+gcc-12-base         12.2.0-14                                         deb   CVE-2022-27943    Negligible  0.9% (56th)    < 0.1         
+libgcc-s1           12.2.0-14                                         deb   CVE-2022-27943    Negligible  0.9% (56th)    < 0.1         
+libstdc++6          12.2.0-14                                         deb   CVE-2022-27943    Negligible  0.9% (56th)    < 0.1         
+gpgv                2.2.40-1.1               (won't fix)              deb   CVE-2026-57062    Low         0.1% (4th)     < 0.1         
+libsystemd0         252.22-1~deb12u1         252.39-1~deb12u2         deb   CVE-2026-40226    Medium      < 0.1% (0th)   < 0.1         
+libudev1            252.22-1~deb12u1         252.39-1~deb12u2         deb   CVE-2026-40226    Medium      < 0.1% (0th)   < 0.1         
+libgssapi-krb5-2    1.20.1-2+deb12u1                                  deb   CVE-2024-26458    Negligible  0.8% (53rd)    < 0.1         
+libk5crypto3        1.20.1-2+deb12u1                                  deb   CVE-2024-26458    Negligible  0.8% (53rd)    < 0.1         
+libkrb5-3           1.20.1-2+deb12u1                                  deb   CVE-2024-26458    Negligible  0.8% (53rd)    < 0.1         
+libkrb5support0     1.20.1-2+deb12u1                                  deb   CVE-2024-26458    Negligible  0.8% (53rd)    < 0.1         
+libheif1            1.15.1-1                                          deb   CVE-2023-49463    Negligible  0.8% (52nd)    < 0.1         
+gcc-12-base         12.2.0-14                12.2.0-14+deb12u1        deb   CVE-2023-4039     Negligible  0.8% (51st)    < 0.1         
+libgcc-s1           12.2.0-14                12.2.0-14+deb12u1        deb   CVE-2023-4039     Negligible  0.8% (51st)    < 0.1         
+libstdc++6          12.2.0-14                12.2.0-14+deb12u1        deb   CVE-2023-4039     Negligible  0.8% (51st)    < 0.1         
+sed                 4.9-1                    4.9-1+deb12u1            deb   CVE-2026-5958     Low         0.1% (3rd)     < 0.1         
+libheif1            1.15.1-1                                          deb   CVE-2024-25269    Negligible  0.7% (49th)    < 0.1         
+libc-bin            2.36-9+deb12u7                                    deb   CVE-2026-6368     Low         0.1% (1st)     < 0.1         
+libc6               2.36-9+deb12u7                                    deb   CVE-2026-6368     Low         0.1% (1st)     < 0.1         
+perl-base           5.36.0-7+deb12u1                                  deb   CVE-2011-4116     Negligible  0.5% (41st)    < 0.1         
+libpng16-16         1.6.39-2                                          deb   CVE-2021-4214     Negligible  0.5% (40th)    < 0.1         
+libsystemd0         252.22-1~deb12u1                                  deb   CVE-2013-4392     Negligible  0.5% (38th)    < 0.1         
+libudev1            252.22-1~deb12u1                                  deb   CVE-2013-4392     Negligible  0.5% (38th)    < 0.1         
+curl                7.88.1-10+deb12u5                                 deb   CVE-2025-15079    Negligible  0.5% (38th)    < 0.1         
+libcurl4            7.88.1-10+deb12u5                                 deb   CVE-2025-15079    Negligible  0.5% (38th)    < 0.1         
+bsdutils            1:2.38.1-5+deb12u1                                deb   CVE-2022-0563     Negligible  0.4% (35th)    < 0.1         
+libblkid1           2.38.1-5+deb12u1                                  deb   CVE-2022-0563     Negligible  0.4% (35th)    < 0.1         
+libmount1           2.38.1-5+deb12u1                                  deb   CVE-2022-0563     Negligible  0.4% (35th)    < 0.1         
+libsmartcols1       2.38.1-5+deb12u1                                  deb   CVE-2022-0563     Negligible  0.4% (35th)    < 0.1         
+libuuid1            2.38.1-5+deb12u1                                  deb   CVE-2022-0563     Negligible  0.4% (35th)    < 0.1         
+mount               2.38.1-5+deb12u1                                  deb   CVE-2022-0563     Negligible  0.4% (35th)    < 0.1         
+util-linux          2.38.1-5+deb12u1                                  deb   CVE-2022-0563     Negligible  0.4% (35th)    < 0.1         
+util-linux-extra    2.38.1-5+deb12u1                                  deb   CVE-2022-0563     Negligible  0.4% (35th)    < 0.1         
+curl                7.88.1-10+deb12u5                                 deb   CVE-2025-15224    Negligible  0.4% (34th)    < 0.1         
+libcurl4            7.88.1-10+deb12u5                                 deb   CVE-2025-15224    Negligible  0.4% (34th)    < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2023-6228     Negligible  0.4% (32nd)    < 0.1         
+curl                7.88.1-10+deb12u5                                 deb   CVE-2025-10966    Negligible  0.4% (32nd)    < 0.1         
+libcurl4            7.88.1-10+deb12u5                                 deb   CVE-2025-10966    Negligible  0.4% (32nd)    < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2023-1916     Negligible  0.4% (31st)    < 0.1         
+libexpat1           2.5.0-1                                           deb   CVE-2023-52426    Negligible  0.4% (30th)    < 0.1         
+libssl3             3.0.11-1~deb12u2                                  deb   CVE-2025-27587    Negligible  0.4% (29th)    < 0.1         
+openssl             3.0.11-1~deb12u2                                  deb   CVE-2025-27587    Negligible  0.4% (29th)    < 0.1         
+libldap-2.5-0       2.5.13+dfsg-5                                     deb   CVE-2017-14159    Negligible  0.3% (27th)    < 0.1         
+libsystemd0         252.22-1~deb12u1                                  deb   CVE-2023-31439    Negligible  0.3% (27th)    < 0.1         
+libudev1            252.22-1~deb12u1                                  deb   CVE-2023-31439    Negligible  0.3% (27th)    < 0.1         
+coreutils           9.1-1                                             deb   CVE-2017-18018    Negligible  0.3% (27th)    < 0.1         
+libsystemd0         252.22-1~deb12u1                                  deb   CVE-2023-31437    Negligible  0.3% (26th)    < 0.1         
+libudev1            252.22-1~deb12u1                                  deb   CVE-2023-31437    Negligible  0.3% (26th)    < 0.1         
+libsystemd0         252.22-1~deb12u1                                  deb   CVE-2023-31438    Negligible  0.3% (25th)    < 0.1         
+libudev1            252.22-1~deb12u1                                  deb   CVE-2023-31438    Negligible  0.3% (25th)    < 0.1         
+curl                7.88.1-10+deb12u5                                 deb   CVE-2026-9547     Negligible  0.3% (25th)    < 0.1         
+libcurl4            7.88.1-10+deb12u5                                 deb   CVE-2026-9547     Negligible  0.3% (25th)    < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2023-3164     Negligible  0.3% (24th)    < 0.1         
+gpgv                2.2.40-1.1                                        deb   CVE-2022-3219     Negligible  0.3% (21st)    < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2025-8177     Negligible  0.3% (19th)    < 0.1         
+perl-base           5.36.0-7+deb12u1                                  deb   CVE-2026-48961    Negligible  0.3% (17th)    < 0.1         
+libgssapi-krb5-2    1.20.1-2+deb12u1                                  deb   CVE-2026-11850    Negligible  0.3% (17th)    < 0.1         
+libk5crypto3        1.20.1-2+deb12u1                                  deb   CVE-2026-11850    Negligible  0.3% (17th)    < 0.1         
+libkrb5-3           1.20.1-2+deb12u1                                  deb   CVE-2026-11850    Negligible  0.3% (17th)    < 0.1         
+libkrb5support0     1.20.1-2+deb12u1                                  deb   CVE-2026-11850    Negligible  0.3% (17th)    < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2025-61144    Negligible  0.3% (16th)    < 0.1         
+diffutils           1:3.8-4                                           deb   CVE-2026-53910    Negligible  0.3% (16th)    < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2025-8176     Negligible  0.2% (14th)    < 0.1         
+coreutils           9.1-1                                             deb   CVE-2025-5278     Negligible  0.2% (14th)    < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2025-9165     Negligible  0.2% (11th)    < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2025-8961     Negligible  0.2% (10th)    < 0.1         
+bsdutils            1:2.38.1-5+deb12u1                                deb   CVE-2025-14104    Negligible  0.2% (9th)     < 0.1         
+libblkid1           2.38.1-5+deb12u1                                  deb   CVE-2025-14104    Negligible  0.2% (9th)     < 0.1         
+libmount1           2.38.1-5+deb12u1                                  deb   CVE-2025-14104    Negligible  0.2% (9th)     < 0.1         
+libsmartcols1       2.38.1-5+deb12u1                                  deb   CVE-2025-14104    Negligible  0.2% (9th)     < 0.1         
+libuuid1            2.38.1-5+deb12u1                                  deb   CVE-2025-14104    Negligible  0.2% (9th)     < 0.1         
+mount               2.38.1-5+deb12u1                                  deb   CVE-2025-14104    Negligible  0.2% (9th)     < 0.1         
+util-linux          2.38.1-5+deb12u1                                  deb   CVE-2025-14104    Negligible  0.2% (9th)     < 0.1         
+util-linux-extra    2.38.1-5+deb12u1                                  deb   CVE-2025-14104    Negligible  0.2% (9th)     < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2025-8534     Negligible  0.2% (7th)     < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2025-8851     Negligible  0.2% (7th)     < 0.1         
+libde265-0          1.0.11-1+deb12u2                                  deb   CVE-2025-61147    Negligible  0.2% (5th)     < 0.1         
+coreutils           9.1-1                                             deb   CVE-2026-56392    Negligible  0.1% (4th)     < 0.1         
+libxml2             2.9.14+dfsg-1.3~deb12u1                           deb   CVE-2026-11979    Negligible  0.1% (4th)     < 0.1         
+libpng16-16         1.6.39-2                 (won't fix)              deb   CVE-2025-28162    Negligible  0.1% (3rd)     < 0.1         
+libpng16-16         1.6.39-2                                          deb   CVE-2025-28164    Negligible  0.1% (3rd)     < 0.1         
+coreutils           9.1-1                                             deb   CVE-2026-56391    Negligible  0.1% (3rd)     < 0.1         
+libldap-2.5-0       2.5.13+dfsg-5                                     deb   CVE-2026-22185    Negligible  0.1% (3rd)     < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2025-61145    Negligible  0.1% (3rd)     < 0.1         
+libpng16-16         1.6.39-2                                          deb   CVE-2026-3713     Negligible  0.1% (2nd)     < 0.1         
+libheif1            1.15.1-1                                          deb   CVE-2026-3949     Negligible  0.1% (1st)     < 0.1         
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2025-61143    Negligible  0.1% (1st)     < 0.1         
+curl                7.88.1-10+deb12u5                                 deb   CVE-2025-14017    Negligible  0.1% (1st)     < 0.1         
+libcurl4            7.88.1-10+deb12u5                                 deb   CVE-2025-14017    Negligible  0.1% (1st)     < 0.1         
+bsdutils            1:2.38.1-5+deb12u1                                deb   CVE-2026-53613    Unknown     N/A            N/A           
+bsdutils            1:2.38.1-5+deb12u1                                deb   CVE-2026-53615    Unknown     N/A            N/A           
+libblkid1           2.38.1-5+deb12u1                                  deb   CVE-2026-53613    Unknown     N/A            N/A           
+libblkid1           2.38.1-5+deb12u1                                  deb   CVE-2026-53615    Unknown     N/A            N/A           
+libde265-0          1.0.11-1+deb12u2                                  deb   CVE-2026-54240    Unknown     N/A            N/A           
+libde265-0          1.0.11-1+deb12u2                                  deb   CVE-2026-54241    Unknown     N/A            N/A           
+libgd3              2.3.3-9                  2.3.3-9+deb12u1          deb   CVE-2026-9672     Unknown     N/A            N/A           
+libheif1            1.15.1-1                                          deb   CVE-2026-50142    Unknown     N/A            N/A           
+libheif1            1.15.1-1                                          deb   CVE-2026-62289    Unknown     N/A            N/A           
+libheif1            1.15.1-1                                          deb   CVE-2026-62292    Unknown     N/A            N/A           
+libmount1           2.38.1-5+deb12u1                                  deb   CVE-2026-53613    Unknown     N/A            N/A           
+libmount1           2.38.1-5+deb12u1                                  deb   CVE-2026-53615    Unknown     N/A            N/A           
+libsmartcols1       2.38.1-5+deb12u1                                  deb   CVE-2026-53613    Unknown     N/A            N/A           
+libsmartcols1       2.38.1-5+deb12u1                                  deb   CVE-2026-53615    Unknown     N/A            N/A           
+libtiff6            4.5.0-6+deb12u1                                   deb   CVE-2026-36849    Unknown     N/A            N/A           
+libuuid1            2.38.1-5+deb12u1                                  deb   CVE-2026-53613    Unknown     N/A            N/A           
+libuuid1            2.38.1-5+deb12u1                                  deb   CVE-2026-53615    Unknown     N/A            N/A           
+mount               2.38.1-5+deb12u1                                  deb   CVE-2026-53613    Unknown     N/A            N/A           
+mount               2.38.1-5+deb12u1                                  deb   CVE-2026-53615    Unknown     N/A            N/A           
+util-linux          2.38.1-5+deb12u1                                  deb   CVE-2026-53613    Unknown     N/A            N/A           
+util-linux          2.38.1-5+deb12u1                                  deb   CVE-2026-53615    Unknown     N/A            N/A           
+util-linux-extra    2.38.1-5+deb12u1                                  deb   CVE-2026-53613    Unknown     N/A            N/A           
+util-linux-extra    2.38.1-5+deb12u1                                  deb   CVE-2026-53615    Unknown     N/A            N/A
